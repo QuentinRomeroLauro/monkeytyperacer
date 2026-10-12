@@ -1,6 +1,18 @@
 import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata("Typing races with friends | Monkeytype Racer", "Race quotes with real people. Create a private typing race, invite friends, or practice solo. Guests welcome.", "/");
 import { RaceHome } from "@/components/race-home";
-export default function Home() {
-  return <RaceHome />;
+import { connection } from "next/server";
+import quotes from "@/lib/race-quotes.json";
+export default async function Home() {
+  await connection();
+  const indices = new Set<number>();
+  while (indices.size < Math.min(12, quotes.length)) {
+    indices.add(Math.floor(Math.random() * quotes.length));
+  }
+  const warmups = [...indices].map(index => {
+    const quote = quotes[index];
+    const [source, author] = quote.source.split(" — ");
+    return { text: quote.text, source, author };
+  });
+  return <RaceHome warmups={warmups} />;
 }

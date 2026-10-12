@@ -4,7 +4,7 @@ English solo practice, public/private races, and homepage warmups now use excerp
 
 Regenerate with `python3 scripts/import-book-quotes.py`. Downloads are cached outside Git in `/tmp/monkeytyperacer-book-sources`. Importing keeps complete paragraphs, normalizes punctuation and whitespace, removes duplicates, and excludes headers, numerical footnotes, and common offensive historical terms. It is an automated selection, not a full editorial review. Underlying works are public domain in the United States; edition links preserve provenance. No Project Gutenberg branding or license boilerplate is included in typing passages.
 
-Practice includes 45–700-character paragraphs to support all length selectors. Races use 140–300 characters for the existing three-minute limit. A twelve-excerpt warmup file keeps the full race library out of the client JavaScript bundle. Non-English quote collections are unchanged.
+Practice includes 45–700-character paragraphs to support all length selectors. Races use 140–300 characters for the existing three-minute limit. The homepage samples twelve distinct race excerpts per request on the server, giving refreshes a random starting quote while keeping the full library out of the client JavaScript bundle. Non-English quote collections are unchanged.
 
 ## TypeRacer reference investigation (2026-10-11)
 

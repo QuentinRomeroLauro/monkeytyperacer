@@ -5,11 +5,10 @@ import { WarmupResults } from "./warmup-results";
 import { newWarmup, recordWarmup, finishWarmup, type WarmupResult } from "@/lib/warmup";
 import type { RaceEdit } from "@/lib/race";
 import { RaceTyping } from "./race-typing";
-import warmups from "@/lib/warmup-quotes.json";
 import { UserPlus, Keyboard } from "./icons";
 import { useRaceEntry } from "./use-race-entry";
 import { RaceEnterButton } from "./race-enter-button";
-export function RaceHome() {
+export function RaceHome({ warmups }: { warmups: { text: string; source: string; author?: string }[] }) {
   const entry = useRaceEntry();
   const { busy, error, enter } = entry;
   const [quoteIndex, setQuoteIndex] = useState(0), [result, setResult] = useState<WarmupResult | null>(null);

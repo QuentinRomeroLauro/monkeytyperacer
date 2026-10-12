@@ -20,10 +20,11 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <div className={`app-shell ${active ? "typing-active" : ""}`}>
         <div className="content-shell">
           <header className="site-header">
-            <Link href="/" className="brand" aria-label="Monkeytype Racer home">
+            {/* A full navigation also resets a completed warmup when already on /. */}
+            <a href="/" className="brand" aria-label="Monkeytype Racer home">
               <Logo />
               <span className="brand-name">monkeytype <span className="brand-racer">racer</span></span>
-            </Link>
+            </a>
             <nav aria-label="Main navigation">
               <Link
                 href="/"

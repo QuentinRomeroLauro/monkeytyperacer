@@ -109,3 +109,25 @@ for(const platform of ["MacIntel","Win32"]) {
   await page.keyboard.up(modifier);
  });
 }
+
+test("logo resets completed and in-progress homepage warmups and returns from practice", async ({ page }) => {
+  await page.goto("/");
+  const input = page.getByRole("textbox", { name: "Type the quote", exact: true });
+  const quote = (await page.locator(".word").allTextContents()).map(w => w.replaceAll("\u200b", "")).join(" ");
+  await input.pressSequentially(quote, { delay: 1 });
+  await expect(page.getByRole("region", { name: "Quote results" })).toBeVisible();
+  const logo = page.getByRole("link", { name: "Monkeytype Racer home" });
+  await logo.click();
+  await expect(input).toBeVisible();
+  await expect(input).toHaveValue("");
+  await expect(input).toBeFocused();
+  await expect(page.getByRole("region", { name: "Quote results" })).toHaveCount(0);
+  await input.pressSequentially("~");
+  await logo.click();
+  await expect(input).toHaveValue("");
+  await page.goto("/practice");
+  await logo.click();
+  await expect(page).toHaveURL(/\/$/);
+  await expect(input).toBeVisible();
+  await expect(input).toHaveValue("");
+});

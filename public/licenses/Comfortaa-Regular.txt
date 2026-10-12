@@ -1,0 +1,18 @@
+Comfortaa-Regular.woff2
+
+Name table field 0:
+Copyright (c) 26.12.2011, Johan Aakerlund (aajohan@gmail.com), with Reserved Font Name "Comfortaa". This Font Software is licensed under the SIL Open Font License, Version 1.1. http://scripts.sil.org/OFL
+
+Name table field 8:
+Johan Aakerlund
+
+Name table field 9:
+Johan Aakerlund - aajohan
+
+Name table field 13:
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+Name table field 14:
+http://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

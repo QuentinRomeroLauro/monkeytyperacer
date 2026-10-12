@@ -1,0 +1,9 @@
+LexendDeca-Regular.woff2
+
+Name table field 0:
+Copyright 2019 The Lexend Project Authors (https://github.com/googlefonts/lexend)
+
+Name table field 14:
+https://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

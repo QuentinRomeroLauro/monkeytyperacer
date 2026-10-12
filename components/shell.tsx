@@ -83,6 +83,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
               <div>
                 <a href="mailto:quentinromero@outlook.com"><Mail />support</a>
                 <Link href="/about"><Info />about & credits</Link>
+                <Link href="/licenses"><Code2 />source & licenses</Link>
                 <a href="https://discord.gg/KJ75VN2pM" target="_blank" rel="noreferrer"><MessageCircle />discord</a>
                 <Link href="/guides">guides</Link>
                 <Link href="/terms">terms</Link>

@@ -1,0 +1,894 @@
+[
+  {
+    "file": "public/webfonts/0xProto-Regular.woff2",
+    "sha256": "c02ab75a26b913765f1c6dfcc07c240ff8e6169e3945df622b041532713c85d9",
+    "metadata": {
+      "0": [
+        "0xType Project Authors (https://github.com/0xType)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": []
+    },
+    "url": "https://github.com/0xType/0xProto/blob/main/LICENSE",
+    "gitBlob": "d61ab62e3643c9d84767180f3d10e7b6aa319757",
+    "licenseFile": "/licenses/0xProto.txt",
+    "license": "OFL-1.1",
+    "noticeFile": "/licenses/0xProto-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/AdwaitaMono-Regular.woff2",
+    "sha256": "f4fc2dc07d6b409ecadac7452572eb11bd389dbe28ab4c360c2422bd0a9604e2",
+    "metadata": {
+      "0": [
+        "Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net)."
+      ],
+      "8": [
+        "Belleve Invis"
+      ],
+      "9": [
+        "Belleve Invis"
+      ],
+      "13": [
+        "This font software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This font software is distributed on an 'AS IS' basis, without warranties or conditions of any kind, either express or implied. See the SIL Open Font license for the specific language, permissions and limitations governing your use of this font software."
+      ],
+      "14": [
+        "https://openfontlicense.org/"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/AdwaitaMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/AtkinsonHyperlegible-Regular.woff2",
+    "sha256": "2df4ba17804bc7a36f123127966075d8427bff2df58d0d76820c1130bb1a4150",
+    "metadata": {
+      "0": [
+        "Copyright 2020 Braille Institute of America, Inc."
+      ],
+      "8": [
+        "Braille Institute"
+      ],
+      "9": [
+        "Elliott Scott, Megan Eiswerth, Linus Boman, Theodore Petrosky"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/AtkinsonHyperlegible-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Boon-Regular.woff2",
+    "sha256": "52b5233be6fa02150d565ea3a8aae5c94246f226fdf8ceec81fadfdc57884895",
+    "metadata": {
+      "0": [
+        "Copyright 2013-2017, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL)."
+      ],
+      "8": [
+        "FontUni"
+      ],
+      "9": [
+        "Sungsit Sawaiwan"
+      ],
+      "13": [],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Boon-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/CascadiaMono-Regular.woff2",
+    "sha256": "2b31f8303972a859e97bd4bcc3d69ec6c8b1f2173a497298c96ad37b3e9dd230",
+    "metadata": {
+      "0": [
+        "© 2021 Microsoft Corporation. All Rights Reserved."
+      ],
+      "8": [
+        "Saja Typeworks"
+      ],
+      "9": [
+        "Aaron Bell"
+      ],
+      "13": [
+        "Microsoft supplied font. You may use this font to create, display, and print content as permitted by the license terms or terms of use, of the Microsoft product, service, or content in which this font was included. You may only (i) embed this font in content as permitted by the embedding restrictions included in this font; and (ii) temporarily download this font to a printer or other output device to help print content. Any other use is prohibited.\n \nThe following license, based on the SIL Open Font license (https://scripts.sil.org/OFL), applies to this font. Additional license terms may be found on the GitHub repository for this font (https://github.com/microsoft/cascadia-code/blob/main/LICENSE).\n \nPermission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:\n \n1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.\n \n2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.\n \n3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.\n \n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.\n \n5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.\n \nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE."
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "url": "https://github.com/microsoft/cascadia-code/blob/main/LICENSE",
+    "gitBlob": "b7f91076e16359ad0e522e81b0e0f115250bc814",
+    "licenseFile": "/licenses/CascadiaMono.txt",
+    "license": "OFL-1.1",
+    "noticeFile": "/licenses/CascadiaMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Comfortaa-Regular.woff2",
+    "sha256": "c7576c61d98e1b6c7291f5309b3da0c5662cfe071dcf050f8dbc1de07d068dce",
+    "metadata": {
+      "0": [
+        "Copyright (c) 26.12.2011, Johan Aakerlund (aajohan@gmail.com), with Reserved Font Name \"Comfortaa\". This Font Software is licensed under the SIL Open Font License, Version 1.1. http://scripts.sil.org/OFL"
+      ],
+      "8": [
+        "Johan Aakerlund"
+      ],
+      "9": [
+        "Johan Aakerlund - aajohan"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1."
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Comfortaa-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/ComingSoon-Regular.woff2",
+    "sha256": "e975a6b393c298075c7b0a262fe46b0f1cb1a9f408cc3a48360a12d897364500",
+    "metadata": {
+      "0": [
+        "Copyright (c) 2010 by Open Window. All rights reserved."
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+      ]
+    },
+    "license": "Apache-2.0",
+    "licenseFile": "/licenses/Apache-2.0.txt",
+    "noticeFile": "/licenses/ComingSoon-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/CommitMono-Regular.woff2",
+    "sha256": "fff2de519a553412ef249a54b4a21dbd812873ea6e6ed9dd7ca3997a276d39b2",
+    "metadata": {
+      "0": [
+        "Copyright 2023 Commit Mono authors (https://github.com/eigilnikolajsen/commit-mono)"
+      ],
+      "8": [
+        "Eigil Nikolajsen"
+      ],
+      "9": [
+        "Eigil Nikolajsen"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/CommitMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/FiraCode-Regular.woff2",
+    "sha256": "a6ce59520b90e15d7062ffef214f94c8add5a4085c0bbb1683602ef227a4d1fe",
+    "metadata": {
+      "0": [
+        "Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)"
+      ],
+      "8": [
+        "Carrois Corporate, Edenspiekermann AG, Nikita Prokopov"
+      ],
+      "9": [
+        "Carrois Corporate, Edenspiekermann AG, Nikita Prokopov"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/FiraCode-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Geist-Medium.woff2",
+    "sha256": "38172c2866346029745e6c6268099aac059fbb591fca3c7f12320c787940cbf8",
+    "metadata": {
+      "0": [
+        "Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)"
+      ],
+      "8": [
+        "Basement.studio, Vercel, Andrés Briganti, Guido Ferreyra, Mateo Zaragoza"
+      ],
+      "9": [
+        "Basement.studio, Andrés Briganti, Mateo Zaragoza"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+      ],
+      "14": [
+        "https://openfontlicense.org"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Geist-Medium.txt"
+  },
+  {
+    "file": "public/webfonts/GeistMono-Medium.woff2",
+    "sha256": "d55ee550def9ba0af069facabc0a2f8e1cb54ba891eb379c90ae300ed12ea90e",
+    "metadata": {
+      "0": [
+        "Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)"
+      ],
+      "8": [
+        "Basement.studio, Vercel, Andrés Briganti, Guido Ferreyra, Mateo Zaragoza"
+      ],
+      "9": [
+        "Basement.studio, Andrés Briganti, Mateo Zaragoza"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+      ],
+      "14": [
+        "https://openfontlicense.org"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/GeistMono-Medium.txt"
+  },
+  {
+    "file": "public/webfonts/Hack-Regular.woff2",
+    "sha256": "0b0ef254dfc7afc172528e3166eace813989e1cf77f576ddae5f5e8fb2897c06",
+    "metadata": {
+      "0": [
+        "Copyright (c) 2018 Source Foundry Authors / Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved."
+      ],
+      "8": [
+        "Source Foundry"
+      ],
+      "9": [
+        "Source Foundry Authors"
+      ],
+      "13": [
+        "The work in the Hack project is Copyright 2018 Source Foundry Authors and licensed under the MIT License\n\nThe work in the DejaVu project was committed to the public domain.\n\nBitstream Vera Sans Mono Copyright 2003 Bitstream Inc. and licensed under the Bitstream Vera License with Reserved Font Names \"Bitstream\" and \"Vera\"\n\nMIT License\n\nCopyright (c) 2018 Source Foundry Authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\nBITSTREAM VERA LICENSE\n\nCopyright (c) 2003 by Bitstream, Inc. All Rights Reserved. Bitstream Vera is a trademark of Bitstream, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of the fonts accompanying this license (\"Fonts\") and associated documentation files (the \"Font Software\"), to reproduce and distribute the Font Software, including without limitation the rights to use, copy, merge, publish, distribute, and/or sell copies of the Font Software, and to permit persons to whom the Font Software is furnished to do so, subject to the following conditions:\n\nThe above copyright and trademark notices and this permission notice shall be included in all copies of one or more of the Font Software typefaces.\n\nThe Font Software may be modified, altered, or added to, and in particular the designs of glyphs or characters in the Fonts may be modified and additional glyphs or characters may be added to the Fonts, only if the fonts are renamed to names not containing either the words \"Bitstream\" or the word \"Vera\".\n\nThis License becomes null and void to the extent applicable to Fonts or Font Software that has been modified and is distributed under the \"Bitstream Vera\" names.\n\nThe Font Software may be sold as part of a larger software package but no copy of one or more of the Font Software typefaces may be sold by itself.\n\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL BITSTREAM OR THE GNOME FOUNDATION BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.\n\nExcept as contained in this notice, the names of Gnome, the Gnome Foundation, and Bitstream Inc., shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Font Software without prior written authorization from the Gnome Foundation or Bitstream Inc., respectively. For further information, contact: fonts at gnome dot org."
+      ],
+      "14": [
+        "https://github.com/source-foundry/Hack/blob/master/LICENSE.md"
+      ]
+    },
+    "license": "MIT AND Bitstream-Vera",
+    "licenseFile": "/licenses/Hack.txt",
+    "noticeFile": "/licenses/Hack-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/IBMPlexMono-Regular.woff2",
+    "sha256": "49ce58b41a0e1cb921c0f58d9a5b8b96a2cc21437c7066f3ba4f24873076d131",
+    "metadata": {
+      "0": [
+        "Copyright 2017 IBM Corp. All rights reserved."
+      ],
+      "8": [
+        "Bold Monday"
+      ],
+      "9": [
+        "Mike Abbink, Paul van der Laan, Pieter van Rosmalen"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/IBMPlexMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/IBMPlexSans-SemiBold.woff2",
+    "sha256": "f78048030eab62e860efa39a0df79e2e5581bf122eb95b9bc42c0b8a4988d205",
+    "metadata": {
+      "0": [
+        "Copyright 2018 IBM Corp. All rights reserved."
+      ],
+      "8": [
+        "Bold Monday"
+      ],
+      "9": [
+        "Mike Abbink, Paul van der Laan, Pieter van Rosmalen"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/IBMPlexSans-SemiBold.txt"
+  },
+  {
+    "file": "public/webfonts/Inconsolata-Regular.woff2",
+    "sha256": "dd27707dafd0317e6d33f6841bb90d4ead107d6b27f2c414f1779741823cad06",
+    "metadata": {
+      "0": [
+        "Copyright 2006 The Inconsolata Project Authors (https://github.com/cyrealtype/Inconsolata)"
+      ],
+      "8": [
+        "Raph Levien, Cyreal, Google"
+      ],
+      "9": [
+        "Raph Levien, Cyreal, Brenton Simpson"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Inconsolata-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/InterTight-Regular.woff2",
+    "sha256": "a365f43dbd3fb50a493cc0f803de8469673f5be74074c5d365843e3285401d04",
+    "metadata": {
+      "0": [
+        "Copyright 2022 The Inter Project Authors (https://github.com/rsms/inter-tight)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": []
+    },
+    "url": "https://github.com/googlefonts/inter-gf-tight/blob/main/OFL.txt",
+    "gitBlob": "18d0da5dfcf4b1703293ed87f8e3efcf34aa643f",
+    "licenseFile": "/licenses/InterTight.txt",
+    "license": "OFL-1.1",
+    "noticeFile": "/licenses/InterTight-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Iosevka-Regular.woff2",
+    "sha256": "1eef7a2089b22fa17214cfaf4e9c0d727b1ac43ba37d0e5e2b2872226769e358",
+    "metadata": {
+      "0": [
+        "Copyright 2015-2025, Renzhi Li (aka. Belleve Invis, belleve@typeof.net)."
+      ],
+      "8": [
+        "Belleve Invis"
+      ],
+      "9": [
+        "Belleve Invis"
+      ],
+      "13": [
+        "This font software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This font software is distributed on an 'AS IS' basis, without warranties or conditions of any kind, either express or implied. See the SIL Open Font license for the specific language, permissions and limitations governing your use of this font software."
+      ],
+      "14": [
+        "https://openfontlicense.org/"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Iosevka-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Itim-Regular.woff2",
+    "sha256": "23850d8e70d78007c891205a8adc2908dc4b3f3cfeb38a3bc36682bd259fd1f9",
+    "metadata": {
+      "0": [
+        "Copyright (c) 2015, Cadson Demak (info@cadsondemak.com), Copyright (c) 2014, Pablo Impallari (www.impallari.com|impallari@gmail.com)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Itim-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/JetBrainsMono-Regular.woff2",
+    "sha256": "a9cb1cd82332b23a47e3a1239d25d13c86d16c4220695e34b243effa999f45f2",
+    "metadata": {
+      "0": [
+        "Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)"
+      ],
+      "8": [
+        "JetBrains"
+      ],
+      "9": [
+        "Philipp Nurullin, Konstantin Bulenkov"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/JetBrainsMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Kanit-Regular.woff2",
+    "sha256": "6f96a34f2246c92022ad1971546c2721b55ac549b37b084f31aee9f1c7acc81d",
+    "metadata": {
+      "0": [
+        "Copyright (c) 2015, Cadson Demak (info@cadsondemak.com)"
+      ],
+      "8": [
+        "CadsonDemak"
+      ],
+      "9": [
+        "Katatrad Team"
+      ],
+      "13": [
+        "Copyright (c) 2015, Cadson Demak (info@cadsondemak.com)\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded, \nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE."
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Kanit-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Lalezar-Regular.woff2",
+    "sha256": "148c72044161f7fdd874a7743f5402f15b04bc2b9a609d2734deb22057bef2d5",
+    "metadata": {
+      "0": [
+        "Copyright 2015 The Lalezar Project Authors (https://github.com/BornaIz/Lalezar)"
+      ],
+      "8": [
+        "Borna Izadpanah"
+      ],
+      "9": [
+        "Borna Izadpanah"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Lalezar-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Lato-Regular.woff2",
+    "sha256": "983b0caf336e8542214fc17019a4fc5e0360864b92806ca14d55c1fc1c2c5a0f",
+    "metadata": {
+      "0": [
+        "Copyright (c) 2011-2015 by tyPoland Lukasz Dziedzic (http://www.typoland.com/) with Reserved Font Name \"Lato\". Licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL). "
+      ],
+      "8": [
+        "tyPoland Lukasz Dziedzic"
+      ],
+      "9": [
+        "Lukasz Dziedzic with Adam Twardoch and Botio Nikoltchev"
+      ],
+      "13": [
+        "Copyright (c) 2011-2015 by tyPoland Lukasz Dziedzic (http://www.typoland.com/) with Reserved Font Name \"Lato\". Licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL). "
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Lato-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/LexendDeca-Regular.woff2",
+    "sha256": "da6fb465c414af8e52b7a88be5a051a0b28afd2991154b0afded101062b8934d",
+    "metadata": {
+      "0": [
+        "Copyright 2019 The Lexend Project Authors (https://github.com/googlefonts/lexend)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/LexendDeca-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Mononoki-Regular.woff2",
+    "sha256": "ba004106c9cb01b4cc0de47de886cc757157d0590a5f2e277f0f3aa54bdbebf8",
+    "metadata": {
+      "0": [
+        "copyright missing"
+      ],
+      "8": [],
+      "9": [
+        "Matthias Tellen"
+      ],
+      "13": [],
+      "14": []
+    },
+    "url": "https://github.com/madmalik/mononoki/blob/main/LICENSE",
+    "gitBlob": "75d0c06f016f5cfeed46aed5d1daa41c02e48fbb",
+    "licenseFile": "/licenses/Mononoki.txt",
+    "license": "OFL-1.1",
+    "noticeFile": "/licenses/Mononoki-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Montserrat-Regular.woff2",
+    "sha256": "c2b2cb00987bfe82494d234b5de4a36d217d20536e37e1b98423cc64efefca43",
+    "metadata": {
+      "0": [
+        "Copyright 2011 The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat)"
+      ],
+      "8": [
+        "Julieta Ulanovsky"
+      ],
+      "9": [
+        "Julieta Ulanovsky"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Montserrat-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/NotoNaskhArabic-Regular.woff2",
+    "sha256": "f8e10555967f6ceab253fca3cacd3b0c7857b24f4b47292e54153fcaed21bac5",
+    "metadata": {
+      "0": [
+        "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/NotoNaskhArabic-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/NotoSansLao-Regular.woff2",
+    "sha256": "d04df61dc1d1a2adc634fafb99d9eb463e3d15eb5aeb752120507a0092643715",
+    "metadata": {
+      "0": [
+        "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/lao)"
+      ],
+      "8": [
+        "Monotype Imaging Inc."
+      ],
+      "9": [
+        "Monotype Design Team"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/NotoSansLao-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Nunito-Bold.woff2",
+    "sha256": "c129c2c42b2f1d5af9bd5b9858f0eba8215ee3ebf61fbc99866e107b2c0af4b5",
+    "metadata": {
+      "0": [
+        "Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Nunito-Bold.txt"
+  },
+  {
+    "file": "public/webfonts/OpenDyslexic-Regular.woff2",
+    "sha256": "d113768e57fe811e9c4e180c017f0761e79a5b3a17ae1c3f4f5cbe6dfa2e14af",
+    "metadata": {
+      "0": [
+        "Copyright © 2019 by Abbie Gonzalez. All rights reserved."
+      ],
+      "8": [],
+      "9": [
+        "Abbie Gonzalez"
+      ],
+      "13": [
+        "Copyright (c) 2019-07-29, Abbie Gonzalez (https://abbiecod.es|support@abbiecod.es),\nwith Reserved Font Name OpenDyslexic.\nCopyright (c) 12/2012 - 2019\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded, \nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n"
+      ],
+      "14": []
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/OpenDyslexic-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/OverpassMono-Regular.woff2",
+    "sha256": "2053420e606230e7067b9397be4588546767f28ed3c5f454b466183c76ac3bbc",
+    "metadata": {
+      "0": [
+        "Copyright 2021 The Overpass Project Authors (https://github.com/RedHatOfficial/Overpass)"
+      ],
+      "8": [
+        "Delve Fonts LLC"
+      ],
+      "9": [
+        "Delve Withrington, Dave Bailey"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/OverpassMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Oxygen-Regular.woff2",
+    "sha256": "d8507ee4e977b77a96d738d1f4db99db9fac7ac4b463c65efc2085394f5fada1",
+    "metadata": {
+      "0": [
+        "Copyright (c) 2012, Vernon Adams (vern@newtypography.co.uk), with Reserved Font Names 'Oxygen'"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Oxygen-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Parkinsans-Regular.woff2",
+    "sha256": "76d73c42851763a6a7f53726de5ce27e4276f4d1d7bd99bfc3c6c5891532a872",
+    "metadata": {
+      "0": [
+        "Copyright 2024 The Parkinsans Project Authors (https://github.com/redstonedesign/parkinsans)"
+      ],
+      "8": [
+        "Indian Type Foundry"
+      ],
+      "9": [
+        "Red Stone, Indian Type Foundry"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"
+      ],
+      "14": [
+        "https://openfontlicense.org"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Parkinsans-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Roboto-Regular.woff2",
+    "sha256": "d4d175f498b00516c629ce8af152cbe745d73932fa58cc9fdfc8e4b49c0da368",
+    "metadata": {
+      "0": [
+        "Copyright 2011 Google Inc. All Rights Reserved."
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+      ]
+    },
+    "license": "Apache-2.0",
+    "licenseFile": "/licenses/Apache-2.0.txt",
+    "noticeFile": "/licenses/Roboto-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/RobotoMono-Regular.woff2",
+    "sha256": "2706dfabcbaaf2dee90c3a10c168d5f5691ce787dcae9e77cd038f66b08fc4ba",
+    "metadata": {
+      "0": [
+        "Copyright 2015 The Roboto Mono Project Authors (https://github.com/googlefonts/robotomono)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "http://www.apache.org/licenses/LICENSE-2.0"
+      ]
+    },
+    "license": "Apache-2.0",
+    "licenseFile": "/licenses/Apache-2.0.txt",
+    "noticeFile": "/licenses/RobotoMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Sarabun-Bold.woff2",
+    "sha256": "5e998c6f5b161f55a1ff4f56fc5aa5990b9fc2d9b42c7f01df282eb382067981",
+    "metadata": {
+      "0": [
+        "Copyright 2018 The Sarabun Project Authors (https://github.com/cadsondemak/Sarabun)"
+      ],
+      "8": [
+        "Cadson Demak Co.,Ltd."
+      ],
+      "9": [
+        "Suppakit Chalermlarp | Katatrad Co.,Ltd."
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Sarabun-Bold.txt"
+  },
+  {
+    "file": "public/webfonts/SourceCodePro-Regular.woff2",
+    "sha256": "23a0d7981dc90c0a8ec7d8a6ca7ee5dc439c777f3e2aabcf1009fdcf0e821b79",
+    "metadata": {
+      "0": [
+        "© 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’"
+      ],
+      "8": [
+        "Adobe"
+      ],
+      "9": [
+        "Paul D. Hunt, Teo Tuominen"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL. This Font Software is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software."
+      ],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/SourceCodePro-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/SpaceGrotesk-Regular.woff2",
+    "sha256": "10cbd2a1c0ea0fb9e6a983a7b33fe338b154aec235118f466429adf272f54d69",
+    "metadata": {
+      "0": [
+        "Copyright 2020 The Space Grotesk Project Authors (https://github.com/floriankarsten/space-grotesk)"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": []
+    },
+    "url": "https://github.com/floriankarsten/space-grotesk/blob/master/OFL.txt",
+    "gitBlob": "cb512b9af44ff61e75e1aad387b7424cdfab36a3",
+    "licenseFile": "/licenses/SpaceGrotesk.txt",
+    "license": "OFL-1.1",
+    "noticeFile": "/licenses/SpaceGrotesk-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/TitilliumWeb-Regular.woff2",
+    "sha256": "6ccb26dc2a03353e8be7e0052375e146285fa243428429df9fcbad2003db105d",
+    "metadata": {
+      "0": [
+        "Copyright (c) 2009-2011 by Accademia di Belle Arti di Urbino and students of MA course of Visual design. Some rights reserved."
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/TitilliumWeb-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Ubuntu-Regular.woff2",
+    "sha256": "8713695256f84a9a0a07359c63d2dc5f26d41cff611b1a2c2d77439d0f2fc30c",
+    "metadata": {
+      "0": [
+        "Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": []
+    },
+    "url": "https://github.com/google/fonts/blob/main/ufl/ubuntu/UFL.txt",
+    "gitBlob": "ae78a8f94eae372cb1ca4e14b67244342fce604e",
+    "licenseFile": "/licenses/Ubuntu.txt",
+    "license": "Ubuntu-font-1.0",
+    "noticeFile": "/licenses/Ubuntu-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/UbuntuMono-Regular.woff2",
+    "sha256": "b7b9cc09915801271c0199fed61b5543d37e0f8ce7ac9e6ff38b671a7071eab5",
+    "metadata": {
+      "0": [
+        "Copyright 2011 Canonical Ltd.  Licensed under the Ubuntu Font Licence 1.0"
+      ],
+      "8": [],
+      "9": [],
+      "13": [],
+      "14": []
+    },
+    "url": "https://github.com/google/fonts/blob/main/ufl/ubuntu/UFL.txt",
+    "gitBlob": "ae78a8f94eae372cb1ca4e14b67244342fce604e",
+    "licenseFile": "/licenses/Ubuntu.txt",
+    "license": "Ubuntu-font-1.0",
+    "noticeFile": "/licenses/UbuntuMono-Regular.txt"
+  },
+  {
+    "file": "public/webfonts/Vazirharf-NL-Regular.woff2",
+    "sha256": "88e12f42c67353821c2043ed759802c3fde9df2a871e83a9119ac7b437e2c94c",
+    "metadata": {
+      "0": [
+        "Copyright 2015 The Vazirmatn Project Authors (https://github.com/rastikerdar/vazirmatn).\nContextual Lam-Alef modifications copyright (c) 2025 Nad Alaba <alaba.nadim@gmail.com> with Reserved Font Name \"Vazirharf\"."
+      ],
+      "8": [
+        "Nad Alaba"
+      ],
+      "9": [
+        "Saber Rastikerdar"
+      ],
+      "13": [
+        "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL"
+      ],
+      "14": [
+        "https://scripts.sil.org/OFL"
+      ]
+    },
+    "license": "OFL-1.1",
+    "licenseFile": "/licenses/OFL-1.1.txt",
+    "noticeFile": "/licenses/Vazirharf-NL-Regular.txt"
+  }
+]

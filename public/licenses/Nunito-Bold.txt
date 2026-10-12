@@ -1,0 +1,9 @@
+Nunito-Bold.woff2
+
+Name table field 0:
+Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
+
+Name table field 14:
+https://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

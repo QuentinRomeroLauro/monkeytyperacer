@@ -1,0 +1,154 @@
+[
+  {
+    "file": "public/languages/chinese_simplified.json",
+    "notice": "Sourced from https://gist.github.com/indiejoseph/eae09c673460aa0b56db"
+  },
+  {
+    "file": "public/languages/chinese_simplified_10k.json",
+    "notice": "Sourced from https://gist.github.com/indiejoseph/eae09c673460aa0b56db"
+  },
+  {
+    "file": "public/languages/chinese_simplified_1k.json",
+    "notice": "Sourced from https://gist.github.com/indiejoseph/eae09c673460aa0b56db"
+  },
+  {
+    "file": "public/languages/chinese_simplified_50k.json",
+    "notice": "Sourced from https://gist.github.com/indiejoseph/eae09c673460aa0b56db"
+  },
+  {
+    "file": "public/languages/chinese_simplified_5k.json",
+    "notice": "Sourced from https://gist.github.com/indiejoseph/eae09c673460aa0b56db"
+  },
+  {
+    "file": "public/languages/code_common_lisp.json",
+    "notice": "Sourced by evaluating sexp (do-external-symbols (sym :cl) (print sym))"
+  },
+  {
+    "file": "public/languages/code_ook.json",
+    "notice": "https://www.dangermouse.net/esoteric/ook.html"
+  },
+  {
+    "file": "public/languages/english_commonly_misspelled.json",
+    "notice": "Sourced from: https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings"
+  },
+  {
+    "file": "public/languages/english_contractions.json",
+    "notice": "Sourced from: https://en.wikipedia.org/wiki/Wikipedia:List_of_English_contractions"
+  },
+  {
+    "file": "public/languages/english_doubleletter.json",
+    "notice": "Sourced from https://www.panopy.com/iphone/secret-ada/double-letter-words.html and https://grammar.yourdictionary.com/word-lists/words-with-double-letters.html"
+  },
+  {
+    "file": "public/languages/french_600k.json",
+    "notice": "Sourced from https://infolingu.univ-mlv.fr/DonneesLinguistiques/Dictionnaires/telechargement.html the 10/26/2022"
+  },
+  {
+    "file": "public/languages/german_10k.json",
+    "notice": "Sourced from: https://wortschatz.uni-leipzig.de/de/download/German and https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#German"
+  },
+  {
+    "file": "public/languages/german_1k.json",
+    "notice": "http://wortschatz.informatik.uni-leipzig.de/index_js.html"
+  },
+  {
+    "file": "public/languages/german_250k.json",
+    "notice": "http://wortschatz.informatik.uni-leipzig.de/index_js.html"
+  },
+  {
+    "file": "public/languages/klingon.json",
+    "notice": "https://www.kli.org/about-klingon/new-klingon-words/date/"
+  },
+  {
+    "file": "public/languages/lorem_ipsum.json",
+    "notice": "Sourced from https://loremipsum.io/generator/?n=5&t=p and https://www.lipsum.com/feed/html"
+  },
+  {
+    "file": "public/languages/maori_1k.json",
+    "notice": "Sourced from: https://tereomaori.tki.org.nz/Teacher-tools/Te-Whakaipurangi-Rauemi/High-frequency-word-lists"
+  },
+  {
+    "file": "public/languages/norwegian_bokmal_150k.json",
+    "notice": "Sourced from Norsk ordbank – bokmål 2005, Språkbanken Nasjonalbiblioteket https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-5/ the 13/05/2023, Licensed from Creative_Commons-BY (CC-BY 4.0) - modified"
+  },
+  {
+    "file": "public/languages/norwegian_bokmal_600k.json",
+    "notice": "Sourced from Norsk ordbank – bokmål 2005, Språkbanken Nasjonalbiblioteket https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-5/ the 13/05/2023, Licensed from Creative_Commons-BY (CC-BY 4.0) - modified"
+  },
+  {
+    "file": "public/languages/norwegian_nynorsk_100k.json",
+    "notice": "Sourced from Norsk ordbank – nynorsk 2012, Språkbanken Nasjonalbiblioteket https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-41/ the 13/05/2023,  Licensed from Creative_Commons-BY (CC-BY 4.0) - modified"
+  },
+  {
+    "file": "public/languages/norwegian_nynorsk_400k.json",
+    "notice": "Sourced from Norsk ordbank – nynorsk 2012, Språkbanken Nasjonalbiblioteket https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-41/ the 13/05/2023,  Licensed from Creative_Commons-BY (CC-BY 4.0) - modified"
+  },
+  {
+    "file": "public/languages/polish_10k.json",
+    "notice": "Based on 'Otwarty słownik frekwencyjny leksemów V.06.2009' by Jerzy Kazojć. Retrieved November 02, 2022 from https://web.archive.org/web/20091116122442/http://www.open-dictionaries.com/slownikfrleks.pdf"
+  },
+  {
+    "file": "public/languages/polish_20k.json",
+    "notice": "Based on 'Otwarty słownik frekwencyjny leksemów V.06.2009' by Jerzy Kazojć. Retrieved November 02, 2022 from https://web.archive.org/web/20091116122442/http://www.open-dictionaries.com/slownikfrleks.pdf"
+  },
+  {
+    "file": "public/languages/polish_40k.json",
+    "notice": "Based on 'Otwarty słownik frekwencyjny leksemów V.06.2009' by Jerzy Kazojć. Retrieved November 02, 2022 from https://web.archive.org/web/20091116122442/http://www.open-dictionaries.com/slownikfrleks.pdf"
+  },
+  {
+    "file": "public/languages/polish_5k.json",
+    "notice": "Based on 'Otwarty słownik frekwencyjny leksemów V.06.2009' by Jerzy Kazojć. Retrieved November 02, 2022 from https://web.archive.org/web/20091116122442/http://www.open-dictionaries.com/slownikfrleks.pdf"
+  },
+  {
+    "file": "public/languages/portuguese.json",
+    "notice": "Sourced from: https://www.wordandphrase.info/port"
+  },
+  {
+    "file": "public/languages/portuguese_1k.json",
+    "notice": "Sourced from: https://www.corpusdoportugues.org"
+  },
+  {
+    "file": "public/languages/portuguese_320k.json",
+    "notice": "Sourced from the pythonprobr/palavras repository, which is based on the LibreOffice pt_BR dictionary"
+  },
+  {
+    "file": "public/languages/portuguese_550k.json",
+    "notice": "Sourced from the pythonprobr/palavras repository, which is based on the LibreOffice pt_BR dictionary and the IME/USP repository."
+  },
+  {
+    "file": "public/languages/portuguese_5k.json",
+    "notice": "Sourced from LibreOffice pt_BR dictionary"
+  },
+  {
+    "file": "public/languages/santali.json",
+    "notice": "Foundational Language Tech: Santali Wordlist. O Foundation. CC0 1.0. (2021)"
+  },
+  {
+    "file": "public/languages/spanish_10k.json",
+    "notice": "Source from corpus.rae.es/lfrecuencias.html"
+  },
+  {
+    "file": "public/languages/spanish_1k.json",
+    "notice": "The original source is: http://corpus.rae.es/lfrecuencias.html but that page is a very old study from 1975 to 2004 of clearly political content, meaning the list was outdated and also filled with legal content more than normal language(There were words like -gastropod- but -hello- wasn't. This second version is a manual updated version correction words that are clearly outdated or too formal."
+  },
+  {
+    "file": "public/languages/swahili_1k.json",
+    "notice": "Source from: https://1000mostcommonwords.com/1000-most-common-swahili-words/."
+  },
+  {
+    "file": "public/languages/swiss_german_1k.json",
+    "notice": "Sourced from: https://1000mostcommonwords.com/1000-most-common-swiss-german-words/."
+  },
+  {
+    "file": "public/languages/swiss_german_2k.json",
+    "notice": "Sourced from: https://1000mostcommonwords.com/1000-most-common-swiss-german-words/. and and random words from: https://de.wiktionary.org"
+  },
+  {
+    "file": "public/languages/wordle.json",
+    "notice": "https://github.com/yyx990803/vue-wordle/blob/main/src/words.ts"
+  },
+  {
+    "file": "public/languages/yoruba_1k.json",
+    "notice": "https://1000mostcommonwords.com/1000-most-common-yoruba-words/"
+  }
+]

@@ -126,6 +126,9 @@ export const EMPTY_RESULTS: TestResult[] = [];
 
 // Upgrade the old default once; explicit alternative and custom themes survive.
 export function migrateConfig(saved: Partial<Config>): Partial<Config> {
+  if (saved.language === "danish_1k" || saved.language === "danish_10k") {
+    saved = { ...saved, language: "danish" };
+  }
   if ((saved.designVersion ?? 0) >= 1) return saved;
   return {
     ...saved,

@@ -1,0 +1,18 @@
+Sarabun-Bold.woff2
+
+Name table field 0:
+Copyright 2018 The Sarabun Project Authors (https://github.com/cadsondemak/Sarabun)
+
+Name table field 8:
+Cadson Demak Co.,Ltd.
+
+Name table field 9:
+Suppakit Chalermlarp | Katatrad Co.,Ltd.
+
+Name table field 13:
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+
+Name table field 14:
+http://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

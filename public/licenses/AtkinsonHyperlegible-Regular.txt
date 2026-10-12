@@ -1,0 +1,18 @@
+AtkinsonHyperlegible-Regular.woff2
+
+Name table field 0:
+Copyright 2020 Braille Institute of America, Inc.
+
+Name table field 8:
+Braille Institute
+
+Name table field 9:
+Elliott Scott, Megan Eiswerth, Linus Boman, Theodore Petrosky
+
+Name table field 13:
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+
+Name table field 14:
+https://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

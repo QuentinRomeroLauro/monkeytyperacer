@@ -1,0 +1,9 @@
+Oxygen-Regular.woff2
+
+Name table field 0:
+Copyright (c) 2012, Vernon Adams (vern@newtypography.co.uk), with Reserved Font Names 'Oxygen'
+
+Name table field 14:
+http://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

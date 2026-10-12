@@ -1,0 +1,9 @@
+Roboto-Regular.woff2
+
+Name table field 0:
+Copyright 2011 Google Inc. All Rights Reserved.
+
+Name table field 14:
+http://www.apache.org/licenses/LICENSE-2.0
+
+Full license: /licenses/Apache-2.0.txt

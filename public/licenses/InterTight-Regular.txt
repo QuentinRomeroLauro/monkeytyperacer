@@ -1,0 +1,6 @@
+InterTight-Regular.woff2
+
+Name table field 0:
+Copyright 2022 The Inter Project Authors (https://github.com/rsms/inter-tight)
+
+Full license: /licenses/InterTight.txt

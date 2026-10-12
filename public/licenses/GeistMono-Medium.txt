@@ -1,0 +1,18 @@
+GeistMono-Medium.woff2
+
+Name table field 0:
+Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)
+
+Name table field 8:
+Basement.studio, Vercel, Andrés Briganti, Guido Ferreyra, Mateo Zaragoza
+
+Name table field 9:
+Basement.studio, Andrés Briganti, Mateo Zaragoza
+
+Name table field 13:
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org
+
+Name table field 14:
+https://openfontlicense.org
+
+Full license: /licenses/OFL-1.1.txt

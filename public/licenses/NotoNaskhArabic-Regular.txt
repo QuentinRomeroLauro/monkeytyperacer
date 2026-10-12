@@ -1,0 +1,9 @@
+NotoNaskhArabic-Regular.woff2
+
+Name table field 0:
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic)
+
+Name table field 14:
+https://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

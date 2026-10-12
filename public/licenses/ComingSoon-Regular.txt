@@ -1,0 +1,9 @@
+ComingSoon-Regular.woff2
+
+Name table field 0:
+Copyright (c) 2010 by Open Window. All rights reserved.
+
+Name table field 14:
+http://www.apache.org/licenses/LICENSE-2.0
+
+Full license: /licenses/Apache-2.0.txt

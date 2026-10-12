@@ -1,0 +1,9 @@
+Mononoki-Regular.woff2
+
+Name table field 0:
+copyright missing
+
+Name table field 9:
+Matthias Tellen
+
+Full license: /licenses/Mononoki.txt

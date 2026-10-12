@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs"
+    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs",
+    "licenses:check": "node scripts/check-licenses.mjs"
   },
   "dependencies": {
     "@hugeicons/core-free-icons": "^4.3.5",

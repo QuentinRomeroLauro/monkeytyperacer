@@ -1,0 +1,6 @@
+0xProto-Regular.woff2
+
+Name table field 0:
+0xType Project Authors (https://github.com/0xType)
+
+Full license: /licenses/0xProto.txt

@@ -1,0 +1,1015 @@
+[
+  {
+    "name": "@babel/code-frame",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-code-frame",
+    "description": "Generate errors that contain a code frame that point to source locations.",
+    "notices": [
+      "/licenses/dependencies/babel-code-frame/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/compat-data",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://github.com/babel/babel#readme",
+    "description": "The compat-data to determine required Babel plugins",
+    "notices": [
+      "/licenses/dependencies/babel-compat-data/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/core",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-core",
+    "description": "Babel compiler core.",
+    "notices": [
+      "/licenses/dependencies/babel-core/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/generator",
+    "versions": [
+      "7.29.8"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-generator",
+    "description": "Turns an AST into code.",
+    "notices": [
+      "/licenses/dependencies/babel-generator/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helper-compilation-targets",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://github.com/babel/babel#readme",
+    "description": "Helper functions on Babel compilation targets",
+    "notices": [
+      "/licenses/dependencies/babel-helper-compilation-targets/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helper-globals",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://github.com/babel/babel#readme",
+    "description": "A collection of JavaScript globals for Babel internal usage",
+    "notices": [
+      "/licenses/dependencies/babel-helper-globals/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helper-module-imports",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-helper-module-imports",
+    "description": "Babel helper functions for inserting module loads",
+    "notices": [
+      "/licenses/dependencies/babel-helper-module-imports/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helper-module-transforms",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-helper-module-transforms",
+    "description": "Babel helper functions for implementing ES6 module transformations",
+    "notices": [
+      "/licenses/dependencies/babel-helper-module-transforms/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helper-string-parser",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-helper-string-parser",
+    "description": "A utility package to parse strings",
+    "notices": [
+      "/licenses/dependencies/babel-helper-string-parser/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helper-validator-identifier",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://github.com/babel/babel#readme",
+    "description": "Validate identifier/keywords name",
+    "notices": [
+      "/licenses/dependencies/babel-helper-validator-identifier/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helper-validator-option",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://github.com/babel/babel#readme",
+    "description": "Validate plugin/preset options",
+    "notices": [
+      "/licenses/dependencies/babel-helper-validator-option/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/helpers",
+    "versions": [
+      "7.29.10"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-helpers",
+    "description": "Collection of helper functions used by Babel transforms.",
+    "notices": [
+      "/licenses/dependencies/babel-helpers/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/parser",
+    "versions": [
+      "7.29.9"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-parser",
+    "description": "A JavaScript parser",
+    "notices": [
+      "/licenses/dependencies/babel-parser/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/template",
+    "versions": [
+      "7.29.7"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-template",
+    "description": "Generate an AST from a string template.",
+    "notices": [
+      "/licenses/dependencies/babel-template/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/traverse",
+    "versions": [
+      "7.29.10"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-traverse",
+    "description": "The Babel Traverse module maintains the overall tree state, and is responsible for replacing, removing, and adding nodes",
+    "notices": [
+      "/licenses/dependencies/babel-traverse/LICENSE"
+    ]
+  },
+  {
+    "name": "@babel/types",
+    "versions": [
+      "7.29.8"
+    ],
+    "license": "MIT",
+    "author": "The Babel Team",
+    "homepage": "https://babel.dev/docs/en/next/babel-types",
+    "description": "Babel Types is a Lodash-esque utility library for AST nodes",
+    "notices": [
+      "/licenses/dependencies/babel-types/LICENSE"
+    ]
+  },
+  {
+    "name": "@hugeicons/core-free-icons",
+    "versions": [
+      "4.3.5"
+    ],
+    "license": "MIT",
+    "author": "Hugeicons",
+    "homepage": "https://hugeicons.com",
+    "notices": [
+      "/licenses/dependencies/hugeicons-core-free-icons/LICENSE.md",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/cjs/CopyrightIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/cjs/LicenseDraftIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/cjs/LicenseIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/cjs/LicenseMaintenanceIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/cjs/LicenseNoIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/cjs/LicensePinIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/cjs/LicenseThirdPartyIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/CopyrightIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/CopyrightIcon.js.map",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseDraftIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseDraftIcon.js.map",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseIcon.js.map",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseMaintenanceIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseMaintenanceIcon.js.map",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseNoIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseNoIcon.js.map",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicensePinIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicensePinIcon.js.map",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseThirdPartyIcon.js",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/esm/LicenseThirdPartyIcon.js.map",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/types/CopyrightIcon.d.ts",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/types/LicenseDraftIcon.d.ts",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/types/LicenseIcon.d.ts",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/types/LicenseMaintenanceIcon.d.ts",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/types/LicenseNoIcon.d.ts",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/types/LicensePinIcon.d.ts",
+      "/licenses/dependencies/hugeicons-core-free-icons/dist/types/LicenseThirdPartyIcon.d.ts"
+    ]
+  },
+  {
+    "name": "@hugeicons/react",
+    "versions": [
+      "1.1.10"
+    ],
+    "license": "MIT",
+    "author": "Hugeicons",
+    "homepage": "https://hugeicons.com",
+    "description": "Hugeicons React Component Library https://hugeicons.com",
+    "notices": [
+      "/licenses/dependencies/hugeicons-react/LICENSE.md"
+    ]
+  },
+  {
+    "name": "@img/colour",
+    "versions": [
+      "1.1.0"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/lovell/colour#readme",
+    "description": "The ESM-only 'color' package made compatible for use with CommonJS runtimes",
+    "notices": [
+      "/licenses/dependencies/img-colour/LICENSE.md"
+    ]
+  },
+  {
+    "name": "@jridgewell/gen-mapping",
+    "versions": [
+      "0.3.13"
+    ],
+    "license": "MIT",
+    "author": "Justin Ridgewell",
+    "homepage": "https://github.com/jridgewell/sourcemaps/tree/main/packages/gen-mapping",
+    "description": "Generate source maps",
+    "notices": [
+      "/licenses/dependencies/jridgewell-gen-mapping/LICENSE"
+    ]
+  },
+  {
+    "name": "@jridgewell/remapping",
+    "versions": [
+      "2.3.5"
+    ],
+    "license": "MIT",
+    "author": "Justin Ridgewell",
+    "homepage": "https://github.com/jridgewell/sourcemaps/tree/main/packages/remapping",
+    "description": "Remap sequential sourcemaps through transformations to point at the original source code",
+    "notices": [
+      "/licenses/dependencies/jridgewell-remapping/LICENSE"
+    ]
+  },
+  {
+    "name": "@jridgewell/resolve-uri",
+    "versions": [
+      "3.1.2"
+    ],
+    "license": "MIT",
+    "author": "Justin Ridgewell",
+    "homepage": "https://github.com/jridgewell/resolve-uri#readme",
+    "description": "Resolve a URI relative to an optional base URI",
+    "notices": [
+      "/licenses/dependencies/jridgewell-resolve-uri/LICENSE"
+    ]
+  },
+  {
+    "name": "@jridgewell/sourcemap-codec",
+    "versions": [
+      "1.6.0"
+    ],
+    "license": "MIT",
+    "author": "Justin Ridgewell",
+    "homepage": "https://github.com/jridgewell/sourcemaps/tree/main/packages/sourcemap-codec",
+    "description": "Encode/decode sourcemap mappings",
+    "notices": [
+      "/licenses/dependencies/jridgewell-sourcemap-codec/LICENSE"
+    ]
+  },
+  {
+    "name": "@jridgewell/trace-mapping",
+    "versions": [
+      "0.3.31"
+    ],
+    "license": "MIT",
+    "author": "Justin Ridgewell",
+    "homepage": "https://github.com/jridgewell/sourcemaps/tree/main/packages/trace-mapping",
+    "description": "Trace the original position through a source map",
+    "notices": [
+      "/licenses/dependencies/jridgewell-trace-mapping/LICENSE"
+    ]
+  },
+  {
+    "name": "@neondatabase/serverless",
+    "versions": [
+      "1.2.0"
+    ],
+    "license": "MIT",
+    "author": "Neon",
+    "homepage": "https://neon.com",
+    "description": "node-postgres for serverless environments from neon.com",
+    "notices": [
+      "/licenses/dependencies/neondatabase-serverless/LICENSE"
+    ]
+  },
+  {
+    "name": "@next/env",
+    "versions": [
+      "16.4.0"
+    ],
+    "license": "MIT",
+    "author": "Next.js Team",
+    "homepage": "https://github.com/vercel/next.js#readme",
+    "description": "Next.js dotenv file loading",
+    "notices": []
+  },
+  {
+    "name": "@next/swc-darwin-arm64",
+    "versions": [
+      "16.4.0"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/vercel/next.js#readme",
+    "notices": []
+  },
+  {
+    "name": "@types/node",
+    "versions": [
+      "22.20.5"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node",
+    "description": "TypeScript definitions for node",
+    "notices": [
+      "/licenses/dependencies/types-node/LICENSE"
+    ]
+  },
+  {
+    "name": "browserslist",
+    "versions": [
+      "4.29.3"
+    ],
+    "license": "MIT",
+    "author": "Andrey Sitnik",
+    "homepage": "https://github.com/browserslist/browserslist#readme",
+    "description": "Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-env-preset",
+    "notices": [
+      "/licenses/dependencies/browserslist/LICENSE"
+    ]
+  },
+  {
+    "name": "client-only",
+    "versions": [
+      "0.0.1"
+    ],
+    "license": "MIT",
+    "homepage": "https://reactjs.org/",
+    "description": "This is a marker package to indicate that a module can only be used in Client Components.",
+    "notices": []
+  },
+  {
+    "name": "convert-source-map",
+    "versions": [
+      "2.0.0"
+    ],
+    "license": "MIT",
+    "author": "Thorsten Lorenz",
+    "homepage": "https://github.com/thlorenz/convert-source-map",
+    "description": "Converts a source-map from/to  different formats and allows adding/changing properties.",
+    "notices": [
+      "/licenses/dependencies/convert-source-map/LICENSE"
+    ]
+  },
+  {
+    "name": "debug",
+    "versions": [
+      "4.4.3"
+    ],
+    "license": "MIT",
+    "author": "Josh Junon",
+    "homepage": "https://github.com/debug-js/debug#readme",
+    "description": "Lightweight debugging utility for Node.js and the browser",
+    "notices": [
+      "/licenses/dependencies/debug/LICENSE"
+    ]
+  },
+  {
+    "name": "escalade",
+    "versions": [
+      "3.2.0"
+    ],
+    "license": "MIT",
+    "author": "Luke Edwards",
+    "homepage": "https://github.com/lukeed/escalade#readme",
+    "description": "A tiny (183B to 210B) and fast utility to ascend parent directories",
+    "notices": [
+      "/licenses/dependencies/escalade/license"
+    ]
+  },
+  {
+    "name": "gensync",
+    "versions": [
+      "1.0.0-beta.2"
+    ],
+    "license": "MIT",
+    "author": "Logan Smyth",
+    "homepage": "https://github.com/loganfsmyth/gensync",
+    "description": "Allows users to use generators in order to write common functions that can be both sync or async.",
+    "notices": [
+      "/licenses/dependencies/gensync/LICENSE"
+    ]
+  },
+  {
+    "name": "js-tokens",
+    "versions": [
+      "4.0.0"
+    ],
+    "license": "MIT",
+    "author": "Simon Lydell",
+    "homepage": "https://github.com/lydell/js-tokens#readme",
+    "description": "A regex that tokenizes JavaScript.",
+    "notices": [
+      "/licenses/dependencies/js-tokens/LICENSE"
+    ]
+  },
+  {
+    "name": "jsesc",
+    "versions": [
+      "3.1.0"
+    ],
+    "license": "MIT",
+    "author": "Mathias Bynens",
+    "homepage": "https://mths.be/jsesc",
+    "description": "Given some data, jsesc returns the shortest possible stringified & ASCII-safe representation of that data.",
+    "notices": [
+      "/licenses/dependencies/jsesc/LICENSE-MIT.txt"
+    ]
+  },
+  {
+    "name": "json5",
+    "versions": [
+      "2.2.3"
+    ],
+    "license": "MIT",
+    "author": "Aseem Kishore",
+    "homepage": "http://json5.org/",
+    "description": "JSON for Humans",
+    "notices": [
+      "/licenses/dependencies/json5/LICENSE.md"
+    ]
+  },
+  {
+    "name": "ms",
+    "versions": [
+      "2.1.3"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/vercel/ms#readme",
+    "description": "Tiny millisecond conversion utility",
+    "notices": [
+      "/licenses/dependencies/ms/license.md"
+    ]
+  },
+  {
+    "name": "nanoid",
+    "versions": [
+      "3.3.20"
+    ],
+    "license": "MIT",
+    "author": "Andrey Sitnik",
+    "homepage": "https://github.com/ai/nanoid#readme",
+    "description": "A tiny (116 bytes), secure URL-friendly unique string ID generator",
+    "notices": [
+      "/licenses/dependencies/nanoid/LICENSE"
+    ]
+  },
+  {
+    "name": "next",
+    "versions": [
+      "16.4.0"
+    ],
+    "license": "MIT",
+    "homepage": "https://nextjs.org",
+    "description": "The React Framework",
+    "notices": [
+      "/licenses/dependencies/next/dist/compiled/@babel/runtime/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@hapi/accept/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@mswjs/interceptors/ClientRequest/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@napi-rs/triples/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@opentelemetry/api/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@vercel/blob/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@vercel/detect-agent/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@vercel/nft/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@vercel/og/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@vercel/og/satori/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/@vercel/routing-utils/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/acorn/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/anser/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/assert/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/async-retry/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/async-sema/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/babel/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/browserify-zlib/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/browserslist/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/buffer/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/busboy/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/bytes/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/ci-info/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/cli-select/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/commander/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/comment-json/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/compression/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/conf/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/content-disposition/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/content-type/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/cookie/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/cross-spawn/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/crypto-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/debug/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/devalue/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/domain-browser/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/edge-runtime/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/events/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/find-up/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/fresh/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/glob/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/gzip-size/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/hash.js/sha256/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/https-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/httpxy/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/icss-utils/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/ignore-loader/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/image-size/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/ipaddr.js/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/is-animated/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/is-docker/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/is-wsl/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/jest-worker/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/json5/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/jsonwebtoken/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/loader-runner/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/loader-utils2/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/loader-utils3/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/lodash.curry/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/lru-cache/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/mini-css-extract-plugin/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/nanoid/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/native-url/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/neo-async/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/node-html-parser/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/ora/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/os-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/p-limit/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/p-queue/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/path-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/path-to-regexp/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/picomatch/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-flexbugs-fixes/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-modules-extract-imports/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-modules-local-by-default/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-modules-scope/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-modules-values/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-preset-env/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-safe-parser/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-scss/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/postcss-value-parser/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/process/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/querystring-es3/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/raw-body/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-dom-experimental/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-dom/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-experimental/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-is/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-refresh/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-server-dom-turbopack-experimental/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-server-dom-turbopack/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-server-dom-webpack-experimental/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react-server-dom-webpack/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/react/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/regenerator-runtime/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/safe-stable-stringify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/sass-loader/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/scheduler-experimental/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/scheduler/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/schema-utils2/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/schema-utils3/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/semver/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/send/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/serve-handler/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/shell-quote/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/source-map/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/source-map08/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/stacktrace-parser/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/stream-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/stream-http/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/string_decoder/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/strip-ansi/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/superstruct/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/tar/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/terser/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/text-table/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/timers-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/tty-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/ua-parser-js/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/util/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/vm-browserify/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/watchpack/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/web-vitals-attribution/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/web-vitals/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/webpack-sources1/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/webpack-sources3/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/webpack/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/write-file-atomic/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/ws/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/zod-validation-error/LICENSE",
+      "/licenses/dependencies/next/dist/compiled/zod/LICENSE",
+      "/licenses/dependencies/next/license.md"
+    ]
+  },
+  {
+    "name": "node-releases",
+    "versions": [
+      "2.0.58"
+    ],
+    "license": "MIT",
+    "author": "Sergey Rubanov",
+    "homepage": "https://github.com/chicoxyzzy/node-releases#readme",
+    "description": "Node.js releases data",
+    "notices": [
+      "/licenses/dependencies/node-releases/LICENSE"
+    ]
+  },
+  {
+    "name": "postcss",
+    "versions": [
+      "8.5.23"
+    ],
+    "license": "MIT",
+    "author": "Andrey Sitnik",
+    "homepage": "https://postcss.org/",
+    "description": "Tool for transforming styles with JS plugins",
+    "notices": [
+      "/licenses/dependencies/postcss/LICENSE"
+    ]
+  },
+  {
+    "name": "react",
+    "versions": [
+      "19.3.0"
+    ],
+    "license": "MIT",
+    "homepage": "https://react.dev/",
+    "description": "React is a JavaScript library for building user interfaces.",
+    "notices": [
+      "/licenses/dependencies/react/LICENSE"
+    ]
+  },
+  {
+    "name": "react-dom",
+    "versions": [
+      "19.3.0"
+    ],
+    "license": "MIT",
+    "homepage": "https://react.dev/",
+    "description": "React package for working with the DOM.",
+    "notices": [
+      "/licenses/dependencies/react-dom/LICENSE"
+    ]
+  },
+  {
+    "name": "scheduler",
+    "versions": [
+      "0.28.0"
+    ],
+    "license": "MIT",
+    "homepage": "https://react.dev/",
+    "description": "Cooperative scheduler for the browser environment.",
+    "notices": [
+      "/licenses/dependencies/scheduler/LICENSE"
+    ]
+  },
+  {
+    "name": "styled-jsx",
+    "versions": [
+      "5.1.6"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/vercel/styled-jsx#readme",
+    "description": "Full CSS support for JSX without compromises",
+    "notices": [
+      "/licenses/dependencies/styled-jsx/license.md"
+    ]
+  },
+  {
+    "name": "undici-types",
+    "versions": [
+      "6.21.0"
+    ],
+    "license": "MIT",
+    "homepage": "https://undici.nodejs.org",
+    "description": "A stand-alone types package for Undici",
+    "notices": [
+      "/licenses/dependencies/undici-types/LICENSE"
+    ]
+  },
+  {
+    "name": "update-browserslist-db",
+    "versions": [
+      "1.3.4"
+    ],
+    "license": "MIT",
+    "author": "Andrey Sitnik",
+    "homepage": "https://github.com/browserslist/update-db#readme",
+    "description": "CLI tool to update caniuse-lite to refresh target browsers from Browserslist config",
+    "notices": [
+      "/licenses/dependencies/update-browserslist-db/LICENSE"
+    ]
+  },
+  {
+    "name": "zod",
+    "versions": [
+      "4.6.6"
+    ],
+    "license": "MIT",
+    "author": "Colin McDonnell",
+    "homepage": "https://zod.dev",
+    "description": "TypeScript-first schema declaration and validation library with static type inference",
+    "notices": [
+      "/licenses/dependencies/zod/LICENSE"
+    ]
+  },
+  {
+    "name": "@img/sharp-darwin-arm64",
+    "versions": [
+      "0.35.5"
+    ],
+    "license": "Apache-2.0",
+    "author": "Lovell Fuller",
+    "homepage": "https://sharp.pixelplumbing.com",
+    "description": "Prebuilt sharp for use with macOS 64-bit ARM",
+    "notices": [
+      "/licenses/dependencies/img-sharp-darwin-arm64/LICENSE"
+    ]
+  },
+  {
+    "name": "@playwright/test",
+    "versions": [
+      "1.64.0"
+    ],
+    "license": "Apache-2.0",
+    "author": "Microsoft Corporation",
+    "homepage": "https://playwright.dev",
+    "description": "A high-level API to automate web browsers",
+    "notices": [
+      "/licenses/dependencies/playwright-test/LICENSE",
+      "/licenses/dependencies/playwright-test/NOTICE"
+    ]
+  },
+  {
+    "name": "@swc/helpers",
+    "versions": [
+      "0.5.23"
+    ],
+    "license": "Apache-2.0",
+    "author": "\uac15\ub3d9\uc724",
+    "homepage": "https://swc.rs",
+    "description": "External helpers for the swc project.",
+    "notices": [
+      "/licenses/dependencies/swc-helpers/LICENSE"
+    ]
+  },
+  {
+    "name": "baseline-browser-mapping",
+    "versions": [
+      "2.11.28"
+    ],
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/web-platform-dx/baseline-browser-mapping#readme",
+    "description": "A library for obtaining browser versions with their maximum supported Baseline feature set and Widely Available status.",
+    "notices": [
+      "/licenses/dependencies/baseline-browser-mapping/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "detect-libc",
+    "versions": [
+      "2.1.2"
+    ],
+    "license": "Apache-2.0",
+    "author": "Lovell Fuller",
+    "homepage": "https://github.com/lovell/detect-libc#readme",
+    "description": "Node.js module to detect the C standard library (libc) implementation family and version",
+    "notices": [
+      "/licenses/dependencies/detect-libc/LICENSE"
+    ]
+  },
+  {
+    "name": "playwright",
+    "versions": [
+      "1.64.0"
+    ],
+    "license": "Apache-2.0",
+    "author": "Microsoft Corporation",
+    "homepage": "https://playwright.dev",
+    "description": "A high-level API to automate web browsers",
+    "notices": [
+      "/licenses/dependencies/playwright/LICENSE",
+      "/licenses/dependencies/playwright/NOTICE"
+    ]
+  },
+  {
+    "name": "playwright-core",
+    "versions": [
+      "1.64.0"
+    ],
+    "license": "Apache-2.0",
+    "author": "Microsoft Corporation",
+    "homepage": "https://playwright.dev",
+    "description": "A high-level API to automate web browsers",
+    "notices": [
+      "/licenses/dependencies/playwright-core/LICENSE",
+      "/licenses/dependencies/playwright-core/NOTICE"
+    ]
+  },
+  {
+    "name": "sharp",
+    "versions": [
+      "0.35.5"
+    ],
+    "license": "Apache-2.0",
+    "author": "Lovell Fuller",
+    "homepage": "https://sharp.pixelplumbing.com",
+    "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images",
+    "notices": [
+      "/licenses/dependencies/sharp/LICENSE"
+    ]
+  },
+  {
+    "name": "@img/sharp-libvips-darwin-arm64",
+    "versions": [
+      "1.3.4"
+    ],
+    "license": "LGPL-3.0-or-later",
+    "author": "Lovell Fuller",
+    "homepage": "https://sharp.pixelplumbing.com",
+    "description": "Prebuilt libvips and dependencies for use with sharp on macOS 64-bit ARM",
+    "notices": []
+  },
+  {
+    "name": "bcryptjs",
+    "versions": [
+      "3.0.3"
+    ],
+    "license": "BSD-3-Clause",
+    "author": "Daniel Wirtz",
+    "homepage": "https://github.com/dcodeIO/bcrypt.js#readme",
+    "description": "Optimized bcrypt in plain JavaScript with zero dependencies, with TypeScript support. Compatible to 'bcrypt'.",
+    "notices": [
+      "/licenses/dependencies/bcryptjs/LICENSE"
+    ]
+  },
+  {
+    "name": "source-map-js",
+    "versions": [
+      "1.2.2"
+    ],
+    "license": "BSD-3-Clause",
+    "author": "Valentin 7rulnik Semirulnik",
+    "homepage": "https://github.com/7rulnik/source-map-js",
+    "description": "Generates and consumes source maps",
+    "notices": [
+      "/licenses/dependencies/source-map-js/LICENSE"
+    ]
+  },
+  {
+    "name": "caniuse-lite",
+    "versions": [
+      "1.0.30001815"
+    ],
+    "license": "CC-BY-4.0",
+    "author": "Ben Briggs",
+    "homepage": "https://github.com/browserslist/caniuse-lite#readme",
+    "description": "A smaller version of caniuse-db, with only the essentials!",
+    "notices": [
+      "/licenses/dependencies/caniuse-lite/LICENSE"
+    ]
+  },
+  {
+    "name": "electron-to-chromium",
+    "versions": [
+      "1.5.452"
+    ],
+    "license": "ISC",
+    "author": "Kilian Valkhof",
+    "homepage": "https://github.com/Kilian/electron-to-chromium#readme",
+    "description": "Provides a list of electron-to-chromium version mappings",
+    "notices": [
+      "/licenses/dependencies/electron-to-chromium/LICENSE"
+    ]
+  },
+  {
+    "name": "lru-cache",
+    "versions": [
+      "5.1.1"
+    ],
+    "license": "ISC",
+    "author": "Isaac Z. Schlueter",
+    "homepage": "https://github.com/isaacs/node-lru-cache#readme",
+    "description": "A cache object that deletes the least-recently-used items.",
+    "notices": [
+      "/licenses/dependencies/lru-cache/LICENSE"
+    ]
+  },
+  {
+    "name": "picocolors",
+    "versions": [
+      "1.1.1"
+    ],
+    "license": "ISC",
+    "author": "Alexey Raspopov",
+    "homepage": "https://github.com/alexeyraspopov/picocolors#readme",
+    "description": "The tiniest and the fastest library for terminal output formatting with ANSI colors",
+    "notices": [
+      "/licenses/dependencies/picocolors/LICENSE"
+    ]
+  },
+  {
+    "name": "semver",
+    "versions": [
+      "6.3.1",
+      "7.8.5"
+    ],
+    "license": "ISC",
+    "author": "GitHub Inc.",
+    "homepage": "https://github.com/npm/node-semver#readme",
+    "description": "The semantic version parser used by npm.",
+    "notices": [
+      "/licenses/dependencies/semver/LICENSE"
+    ]
+  },
+  {
+    "name": "yallist",
+    "versions": [
+      "3.1.1"
+    ],
+    "license": "ISC",
+    "author": "Isaac Z. Schlueter",
+    "homepage": "https://github.com/isaacs/yallist#readme",
+    "description": "Yet Another Linked List",
+    "notices": [
+      "/licenses/dependencies/yallist/LICENSE"
+    ]
+  },
+  {
+    "name": "tslib",
+    "versions": [
+      "2.8.1"
+    ],
+    "license": "0BSD",
+    "author": "Microsoft Corp.",
+    "homepage": "https://www.typescriptlang.org/",
+    "description": "Runtime library for TypeScript helper functions",
+    "notices": [
+      "/licenses/dependencies/tslib/CopyrightNotice.txt",
+      "/licenses/dependencies/tslib/LICENSE.txt"
+    ]
+  }
+]

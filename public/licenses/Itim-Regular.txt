@@ -1,0 +1,9 @@
+Itim-Regular.woff2
+
+Name table field 0:
+Copyright (c) 2015, Cadson Demak (info@cadsondemak.com), Copyright (c) 2014, Pablo Impallari (www.impallari.com|impallari@gmail.com)
+
+Name table field 14:
+http://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

@@ -1,0 +1,15 @@
+Boon-Regular.woff2
+
+Name table field 0:
+Copyright 2013-2017, Sungsit Sawaiwan (https://fontuni.com | uni@fontuni.com). This Font Software is licensed under the SIL Open Font License, Version 1.1 (http://scripts.sil.org/OFL).
+
+Name table field 8:
+FontUni
+
+Name table field 9:
+Sungsit Sawaiwan
+
+Name table field 14:
+http://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

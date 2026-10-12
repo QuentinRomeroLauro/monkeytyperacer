@@ -1,0 +1,18 @@
+FiraCode-Regular.woff2
+
+Name table field 0:
+Copyright 2014-2021 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)
+
+Name table field 8:
+Carrois Corporate, Edenspiekermann AG, Nikita Prokopov
+
+Name table field 9:
+Carrois Corporate, Edenspiekermann AG, Nikita Prokopov
+
+Name table field 13:
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL
+
+Name table field 14:
+http://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

@@ -1,5 +1,6 @@
 import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 const pages: Record<string, { title: string; paragraphs: string[] }> = {
   privacy: {
     title: "privacy policy",
@@ -15,7 +16,7 @@ const pages: Record<string, { title: string; paragraphs: string[] }> = {
     paragraphs: [
       "This independent typing application is provided as-is for practice and personal use. It is not affiliated with or endorsed by Monkeytype or TypeRacer.",
       "You are responsible for the content you enter and your account credentials. Do not use the service to abuse other users, attempt unauthorized access, or submit automated scores as genuine typing results.",
-      "The software and derivative assets are available under GPL-3.0. Original Monkeytype credits and applicable asset licenses are preserved.",
+      "The application is free software under GPLv3. Separately licensed assets retain their own terms. These service rules do not restrict the rights granted by the software or asset licenses. The source and licenses page provides the full license, corresponding source, copyright notices, and warranty disclaimer.",
       "Leaderboards currently use client-reported results and are intended for practice, not verified competitions.",
     ],
   },
@@ -51,6 +52,7 @@ export default async function InfoPage({
       {page.paragraphs.map((p, i) => (
         <p key={i}>{p}</p>
       ))}
+      {info === "terms" && <p><Link href="/licenses">Source code, licenses, and notices</Link></p>}
     </div>
   );
 }

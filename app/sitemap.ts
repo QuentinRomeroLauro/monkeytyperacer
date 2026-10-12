@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/practice",
     "/about",
+    "/licenses",
     "/leaderboards",
     "/guides",
     "/typing-race-with-friends",

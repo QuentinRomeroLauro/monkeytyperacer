@@ -1,0 +1,18 @@
+CommitMono-Regular.woff2
+
+Name table field 0:
+Copyright 2023 Commit Mono authors (https://github.com/eigilnikolajsen/commit-mono)
+
+Name table field 8:
+Eigil Nikolajsen
+
+Name table field 9:
+Eigil Nikolajsen
+
+Name table field 13:
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL
+
+Name table field 14:
+https://scripts.sil.org/OFL
+
+Full license: /licenses/OFL-1.1.txt

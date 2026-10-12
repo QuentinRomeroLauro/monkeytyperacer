@@ -19,4 +19,11 @@ describe("blue design migration", () => {
   it("round-trips the migration marker through cloud validation", () => {
     expect(configSchema.parse(defaults)).toEqual(defaults);
   });
+  it("moves saved restricted Danish lists to the available basic list", () => {
+    for (const language of ["danish_1k", "danish_10k"]) {
+      expect(migrateConfig({ ...defaults, language, time: 60 })).toMatchObject({
+        language: "danish", time: 60, designVersion: 1,
+      });
+    }
+  });
 });

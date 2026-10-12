@@ -6,9 +6,11 @@ AdSense account created on October 11, 2026 using `quentin@tryinspector.com`,
 with United States as the confirmed payment country and terms accepted with the
 owner's explicit approval. Publisher: `ca-pub-4964806002936045`.
 Ownership verified by Google using the deployed meta tag. Review requested;
-AdSense shows **Getting ready** / **Review requested**. The payment profile still
-requires the owner's legal payee details; the Customer information form is open
-for the owner to complete. Review requested is not approval.
+AdSense shows **Getting ready** / **Review requested**. The owner completed the
+payment profile; the onboarding dashboard confirms **We've got your info**,
+**Ads settings confirmed**, and **Nice work, you've completed all the steps**.
+Review requested is not approval. Any later payment, tax, or identity verification
+requests must still be completed when Google presents them.
 
 Production deployment of commit `effd83a` is live at `https://monkeytyperacer.com`.
 Verified HTTP 200 plain-text `/ads.txt` containing:

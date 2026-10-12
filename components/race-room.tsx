@@ -87,7 +87,11 @@ export function RaceRoom({ id }: { id: string }) {
       setBusy(false);
     }
   }
+  const joiningNext = useRef(false);
   async function raceAgain() {
+    if (joiningNext.current || busy) return;
+    joiningNext.current = true;
+    setLocalError("");
     setBusy(true);
     try {
       const next = await raceRequest({
@@ -97,6 +101,7 @@ export function RaceRoom({ id }: { id: string }) {
       router.push(`/race/${next.id}`);
     } catch (e) {
       setLocalError(e instanceof Error ? e.message : "Unable to join.");
+      joiningNext.current = false;
       setBusy(false);
     }
   }
@@ -341,17 +346,15 @@ export function RaceRoom({ id }: { id: string }) {
                     </dl>
                   </div>
                   <div className="race-result-buttons">
-                    {room.kind === "public" ? (
-                      <button
+                    <button
                         className="race-primary"
                         disabled={busy}
                         onClick={raceAgain}
                       >
-                        race again <ArrowRight size={18} />
+                        Next race <ArrowRight size={18} />
                       </button>
-                    ) : host ? (
+                    {room.kind === "private" && host && (
                       <button
-                        className="race-primary"
                         disabled={busy || room.phase !== "finished"}
                         onClick={() =>
                           command({ action: "rematch", round: room.round })
@@ -359,8 +362,6 @@ export function RaceRoom({ id }: { id: string }) {
                       >
                         <RotateCw size={18} /> rematch
                       </button>
-                    ) : (
-                      <span>waiting for the host to start a rematch</span>
                     )}
                     {me?.finishedAt && <RaceShareActions key={`${room.id}:${room.round}`} result={{ wpm: me.wpm, accuracy: me.accuracy, place, racers: room.players.length }} />}
                     <button onClick={invite} aria-live="polite">

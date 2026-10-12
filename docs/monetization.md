@@ -5,8 +5,32 @@
 AdSense account created on October 11, 2026 using `quentin@tryinspector.com`,
 with United States as the confirmed payment country and terms accepted with the
 owner's explicit approval. Publisher: `ca-pub-4964806002936045`.
-The site is registered and requires verification and review. Payment details and
-consent messages still need configuration.
+Ownership verified by Google using the deployed meta tag. Review requested;
+AdSense shows **Getting ready** / **Review requested**. The payment profile still
+requires the owner's legal payee details; the Customer information form is open
+for the owner to complete. Review requested is not approval.
+
+Production deployment of commit `effd83a` is live at `https://monkeytyperacer.com`.
+Verified HTTP 200 plain-text `/ads.txt` containing:
+
+```text
+google.com, pub-4964806002936045, DIRECT, f08c47fec0942fa0
+```
+
+AdSense's ads.txt dashboard still showed Not found immediately after deployment;
+its crawler status has not yet caught up. The live publisher meta tag matches.
+Auto ads and Auto optimize are both confirmed Off in the AdSense site table.
+
+Saved consent drafts (not published or running on the site):
+- **Monkeytype Racer — European consent**: English, this site's privacy URL,
+  Consent / Do not consent / Manage options; refusal enabled across all listed
+  European regions, automatic consent-message optimization Off, text header.
+- **Monkeytype Racer — US privacy choices**: English, opt-out link, all current
+  and future supported US states.
+
+Publish and verify the consent integration, provider/purpose settings, privacy
+policy disclosures, and persistent reopening controls before enabling the first
+ad placement. Saving these drafts does not make the site consent-ready.
 
 The application supports verification without loading Google's advertising
 JavaScript. `ADSENSE_PUBLISHER_ID` supplies the `google-adsense-account` head

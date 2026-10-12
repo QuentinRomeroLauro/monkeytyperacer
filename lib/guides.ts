@@ -33,6 +33,14 @@ export const guides = [
         ],
       },
       {
+        id: "score-types",
+        title: "Raw speed, accuracy, and a correct finish.",
+        paragraphs: [
+          "Raw speed counts typing attempts. Accuracy asks what share of those attempts were correct. Corrected WPM counts the eligible text produced over elapsed time. These numbers answer different questions; multiplying raw WPM by accuracy does not necessarily reproduce a test’s reported WPM.",
+          "Some tests subtract uncorrected errors per minute from gross WPM. Monkeytype Racer uses the eligible-character rules above instead. Backspacing takes time, and the original incorrect attempt still affects accuracy. Compare results within the same mode and settings rather than assuming every site uses the same error penalty.",
+        ],
+      },
+      {
         id: "accuracy",
         title: "Accuracy tells the other half.",
         paragraphs: [
@@ -57,7 +65,7 @@ export const guides = [
     searchTitle: "How to improve typing accuracy",
     description:
       "A practical typing routine for fewer mistakes: slow down, spot repeated errors, practice difficult words, and build a steady rhythm.",
-    minutes: 4,
+    minutes: 5,
     image: "practice",
     imageAlt:
       "Quote practice in Monkeytype Racer with the quote mode and length controls visible",
@@ -80,6 +88,14 @@ export const guides = [
         paragraphs: [
           "After a practice test, inspect the character history and ask what interrupted you. Was it a capital letter, an apostrophe, a repeated letter, or a word you anticipated incorrectly? Pick one recurring issue for the next run.",
           "The practice results include a missed-word practice action when there are mistakes to revisit. You can also use custom text to repeat a few difficult words. Keep the exercise short enough that you are still paying attention.",
+        ],
+      },
+      {
+        id: "drills",
+        title: "Pick one thing to practice.",
+        paragraphs: [
+          "Choose the exercise that matches your last mistake. Type it once at a comfortable pace, review the result, then repeat. These are short practice prompts, not timed challenges or promises of a particular improvement.",
+          "On the results screen, open “words history” to see which words differed from the passage. If there are mistakes, “practice missed words” appears below the main result controls and starts a custom exercise containing those words.",
         ],
       },
       {
@@ -108,7 +124,7 @@ export const guides = [
     searchTitle: "How to host a typing race with friends",
     description:
       "Create a private typing room, share an invite link, ready up, and race the same quote with up to five people. No account required.",
-    minutes: 3,
+    minutes: 5,
     image: "lobby",
     imageAlt:
       "A private Monkeytype Racer lobby with an invite link, ready controls, and a host start button",
@@ -140,6 +156,16 @@ export const guides = [
           "Each racer selects “i’m ready”. With at least two racers and everyone ready, the host can start the race. A shared countdown gives everyone the same start time, and the same quote appears for all racers.",
           "Type the quote as shown, including punctuation and capitals. Use Backspace to correct mistakes. You must finish the quote correctly; progress bars show where everyone is, and standings show completed finish times.",
         ],
+      },
+      {
+        id: "series",
+        title: "Two wins take the series.",
+        paragraphs: [
+          "For two players, try a best-of-three. For a group of up to five, keep everyone in the same private room and award one round win to the first correct finisher shown in the standings. The first person to win two rounds wins the series. With more than two racers, the series can take more than three rounds; play until someone reaches two wins. These are suggested house rules, not an automatic tournament mode.",
+          "For example, Alice wins round one, Ben wins round two, and Alice wins round three: record Alice 2, Ben 1. Keep the tally in a shared note. Use the displayed finish order, not rounded WPM, to decide a round. If the result is genuinely unclear, agree to replay it.",
+          "Before starting, agree whether a disconnect means replaying the round or recording the remaining finishers. Apply the same choice to everyone. If the whole room loses connection, pause the series and create a fresh room if needed. Race standings are for the current round; they do not maintain your series tally.",
+        ],
+        callout: "Invite to copy: Join my typing race! Open the room link below, choose a name, and select “i’m ready”. We’ll race the same quote. First to two round wins takes the series. We’ll agree our disconnect rule before starting. [Paste your fresh room link here.]",
       },
       {
         id: "again",

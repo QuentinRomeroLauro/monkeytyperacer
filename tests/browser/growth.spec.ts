@@ -44,8 +44,8 @@ test("search landing pages launch the promised practice mode and fit mobile", as
   page,
 }) => {
   await page.goto("/1-minute-typing-test");
-  await page.getByRole("button", { name: "start a one-minute test" }).click();
-  await expect(page).toHaveURL(/\/practice$/);
+  await expect(page.getByRole("textbox", { name: "Type the words here" })).toBeVisible();
+  await expect(page).toHaveURL(/\/1-minute-typing-test$/);
   await expect(
     page.getByRole("button", { name: "time", exact: true }),
   ).toHaveClass(/selected/);
@@ -53,13 +53,16 @@ test("search landing pages launch the promised practice mode and fit mobile", as
     page.getByRole("button", { name: "60", exact: true }),
   ).toHaveClass(/selected/);
   await page.goto("/quote-typing-practice");
-  await page.getByRole("button", { name: "practice a quote" }).click();
+  await expect(page.getByRole("textbox", { name: "Type the words here" })).toBeVisible();
+  await expect(page).toHaveURL(/\/quote-typing-practice$/);
   await expect(
     page.getByRole("button", { name: "quote", exact: true }),
   ).toHaveClass(/selected/);
   await page.setViewportSize({ width: 390, height: 844 });
   for (const path of [
     "/guides",
+    "/quote-typing-practice",
+    "/1-minute-typing-test",
     "/guides/how-is-typing-wpm-calculated",
     "/typing-race-with-friends",
   ]) {

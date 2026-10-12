@@ -185,10 +185,13 @@ export function TypingTest() {
             startAgain(repeat?.words ?? result.words, result.quoteSource)
           }
           onPractice={() => {
-            const missed = result.words.filter(
+            const missed = result.words.slice(0, result.typed.length).filter(
               (word, index) => result.typed[index] !== word,
             );
-            if (missed.length) startAgain(missed);
+            if (missed.length) {
+              setConfig({ mode: "custom", customText: missed.join(" "), customRandom: false });
+              startAgain(missed);
+            }
           }}
         />
       ) : (

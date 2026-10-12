@@ -1961,3 +1961,29 @@ button:disabled { cursor:not-allowed; }
 .race-quote-title { color:var(--main-color); font-style:normal; line-height:1.5; }
 .words-viewport.race-quote-scroll { overflow-y:auto; overscroll-behavior-y:contain; scrollbar-width:thin; scrollbar-color:var(--sub-color) transparent; }
 .race-quote-scroll .words-container { transition:none; }
+
+/* Search entry pages use the same practice engine, with supporting copy below. */
+.practice-landing .editorial-hero { padding: 0 0 28px; max-width: 760px; }
+.practice-landing h1 { font-size: clamp(28px, 3.5vw, 42px); margin: 12px 0; letter-spacing: -1.2px; }
+.practice-landing .editorial-deck { font-size: 13px; line-height: 1.7; }
+.landing-practice { padding: 28px 0; border-top: 1px solid var(--sub-alt-color); border-bottom: 1px solid var(--sub-alt-color); min-height: 330px; }
+.practice-landing .activity-steps { margin-top: 40px; }
+.guide-tool { background: var(--sub-alt-color); border: 1px solid color-mix(in srgb, var(--sub-color) 25%, transparent); border-radius: 12px; padding: 24px; margin: 24px 0; }
+.calculator-fields { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: end; gap: 20px; }
+.calculator-fields label { display: grid; gap: 10px; font-size: 12px; color: var(--text-color); }
+.calculator-fields input { width: 100%; min-width: 0; background: var(--bg-color); border: 1px solid var(--sub-color); padding: 12px; border-radius: 6px; color: var(--text-color); font-size: 18px; }
+.calculator-fields input:focus-visible { outline: 2px solid var(--main-color); outline-offset: 3px; }
+.calculator-answer { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; color: var(--main-color); }
+.calculator-answer output { font-size: 40px; letter-spacing: -2px; overflow-wrap: anywhere; max-width: 100%; }
+.calculator-answer span { font-size: 12px; }
+.article-copy .tool-note, .tool-note { font-size: 12px; line-height: 1.8; color: var(--sub-color); }
+.drill-card h3 { font-size: 18px; color: var(--main-color); }
+.drill-card blockquote { border-left: 2px solid var(--main-color); padding-left: 16px; margin: 20px 0; font-size: 14px; line-height: 1.9; }
+.drill-link { display: inline-block; color: var(--main-color); padding: 8px 0; font-size: 13px; }
+.missed-practice-action { align-self: center; color: var(--main-color); padding: 12px 18px; margin: 8px auto; display: block; font-size: 12px; }
+@media(max-width: 650px) {
+  .calculator-fields { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .calculator-answer { grid-column: 1 / -1; }
+  .guide-tool { padding: 18px; }
+  .landing-practice { padding: 20px 0; }
+}

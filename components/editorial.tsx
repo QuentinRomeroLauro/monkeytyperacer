@@ -7,11 +7,13 @@ export function ProductFigure({
   alt,
   caption,
   priority = false,
+  height = 640,
 }: {
   image: string;
   alt: string;
   caption: string;
   priority?: boolean;
+  height?: number;
 }) {
   return (
     <figure className="product-figure">
@@ -26,7 +28,7 @@ export function ProductFigure({
           src={`/guides/${image}.jpg`}
           alt={alt}
           width={1024}
-          height={640}
+          height={height}
           priority={priority}
           sizes="(max-width: 700px) 100vw, 1024px"
         />

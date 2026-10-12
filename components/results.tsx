@@ -21,6 +21,7 @@ export function Results({
   result: r,
   onNext,
   onRepeat,
+  onPractice,
 }: {
   result: TestResult;
   onNext: () => void;
@@ -168,6 +169,9 @@ export function Results({
           {shareMessage.startsWith("copied") ? <Check size={20} /> : <Upload size={20} />}<span>share</span>
         </button>
       </div>
+      {r.typed.some((typed, index) => typed !== r.words[index]) && (
+        <button type="button" className="missed-practice-action" onClick={onPractice}>practice missed words</button>
+      )}
       {shareMessage && <p className="practice-share-feedback" role="status">{shareMessage}</p>}
       <div className="race-launch-primary practice-race-entry"><RaceEnterButton entry={entry} /></div>
       {entry.error && <p className="race-error practice-entry-error" role="alert">{entry.error}</p>}

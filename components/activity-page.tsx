@@ -1,3 +1,4 @@
+import { PracticeSession } from "./practice-session";
 import Link from "next/link";
 import { ProductFigure, ActivityLinks } from "./editorial";
 import { StartActivity } from "./start-activity";
@@ -46,7 +47,7 @@ const activities = {
     steps: [
       [
         "Type to begin",
-        "We open solo practice in time mode with 60 seconds selected. Your other language and typing preferences stay yours.",
+        "The test above starts in time mode with 60 seconds selected. Your other language and typing preferences stay yours.",
       ],
       [
         "Keep a steady rhythm",
@@ -74,7 +75,7 @@ const activities = {
     steps: [
       [
         "Pick your length",
-        "Open quote mode and choose short, medium, long, or all lengths from the toolbar. Begin when you are ready.",
+        "Choose short, medium, long, or all lengths from the toolbar above. Begin when you are ready.",
       ],
       [
         "Follow the text",
@@ -90,19 +91,22 @@ const activities = {
 export function ActivityPage({ mode }: { mode: keyof typeof activities }) {
   const a = activities[mode];
   return (
-    <div className="editorial">
+    <div className={`editorial ${mode !== "friends" ? "practice-landing" : ""}`}>
       <header className="editorial-hero activity-hero">
         <p className="editorial-eyebrow">{a.eyebrow}</p>
         <h1>
-          {a.title}
-          <br />
-          <em>{a.accent}</em>
+          {mode === "friends" ? a.title : mode === "minute" ? "A one-minute typing test." : "Quote typing practice."}
+          {mode === "friends" && <><br /><em>{a.accent}</em></>}
         </h1>
         <p className="editorial-deck">{a.description}</p>
-        <StartActivity mode={mode}>{a.cta}</StartActivity>
+        {mode === "friends" && <StartActivity mode={mode}>{a.cta}</StartActivity>}
         <p className="activity-note">no account needed · free to play</p>
       </header>
-      <ProductFigure image={a.image} alt={a.alt} caption={a.caption} priority />
+      {mode === "friends" ? <ProductFigure image={a.image} alt={a.alt} caption={a.caption} priority /> : (
+        <section className="landing-practice" aria-label={mode === "minute" ? "One-minute typing test" : "Quote typing exercise"}>
+          <PracticeSession key={mode} minute={mode === "minute"} />
+        </section>
+      )}
       <section className="activity-steps" aria-label="How it works">
         {a.steps.map(([title, text], i) => (
           <div key={title}>

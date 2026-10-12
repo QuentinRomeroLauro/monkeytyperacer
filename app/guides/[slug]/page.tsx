@@ -1,3 +1,5 @@
+import { WpmCalculator } from "@/components/wpm-calculator";
+import { AccuracyDrills } from "@/components/accuracy-drills";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { guides } from "@/lib/guides";
@@ -65,6 +67,8 @@ export default async function GuidePage({
               {s.paragraphs.map((p) => (
                 <p key={p}>{p}</p>
               ))}
+              {g.slug === "how-is-typing-wpm-calculated" && s.id === "the-formula" && <WpmCalculator />}
+              {g.slug === "improve-typing-accuracy" && s.id === "drills" && <><ProductFigure image="missed-words" height={799} alt="Practice results with the practice missed words button below the result controls" caption="An illustrative capitals exercise: choose “practice missed words” to focus the next run on mistakes." /><AccuracyDrills /></>}
               {"callout" in s && s.callout && (
                 <div className="article-callout">{s.callout}</div>
               )}

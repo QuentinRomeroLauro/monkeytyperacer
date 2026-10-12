@@ -28,7 +28,8 @@ for (const kind of ["private", "public"] as const) {
     await next.click();
     await expect(page.locator(".race-error[role=alert]")).toContainText("Please try again.");
     await expect(next).toBeEnabled();
-    await next.click();
+    const shortcut = await next.getAttribute("aria-keyshortcuts");
+    await page.keyboard.press(shortcut === "Meta+Enter" ? "Meta+Enter" : "Control+Enter");
     await expect(page).toHaveURL(/\/race\/next-room$/);
     expect(queueCalls).toBe(2);
   });

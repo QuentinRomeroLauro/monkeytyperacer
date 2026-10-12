@@ -2,7 +2,7 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { useApp } from "./context";
 import { useTypingCaret } from "./use-typing-caret";
-import { Check } from "./icons";
+import { RotateCw } from "./icons";
 import { correctPrefix, editText, type RaceEdit } from "@/lib/race";
 function wordRanges(quote: string) {
   const words = quote.split(" "),
@@ -21,21 +21,65 @@ export const RaceTyping = memo(function RaceTyping({
   enabled,
   onEdit,
   warmup = false,
+  finished = false,
+  replayId,
 }: {
   warmup?: boolean;
+  finished?: boolean;
+  replayId?: string;
   quote: string;
   initial: string;
   enabled: boolean;
   onEdit: (type: RaceEdit["type"], text?: string, flush?: boolean) => void;
 }) {
   const { config, modal } = useApp();
-  const [typed, setTyped] = useState(initial),
+  const [liveTyped, setTyped] = useState(initial),
     [focused, setFocused] = useState(false),
     [draft, setDraft] = useState(initial);
   const latest = useRef(initial),
     input = useRef<HTMLTextAreaElement>(null),
     container = useRef<HTMLDivElement>(null),
     word = useRef<HTMLSpanElement>(null);
+  const recording = useRef<{ at: number; text: string }[]>([{ at: 0, text: initial }]);
+  const recordingStart = useRef<number | null>(null);
+  const [replayAt, setReplayAt] = useState<number | null>(null);
+  const [playing, setPlaying] = useState(false);
+  const replayPosition = useRef(0);
+  const replayDuration = recording.current.at(-1)?.at ?? 0;
+  const replayPoint = finished && replayAt !== null
+    ? recording.current.findLast(point => point.at <= replayAt)
+    : null;
+  const typed = replayPoint?.text ?? liveTyped;
+  useEffect(() => {
+    if (!playing || !finished) return;
+    let frame: number;
+    let previous = performance.now();
+    const tick = (now: number) => {
+      const elapsed = now - previous;
+      previous = now;
+      replayPosition.current = Math.min(replayDuration, replayPosition.current + elapsed);
+      setReplayAt(replayPosition.current);
+      if (replayPosition.current >= replayDuration) setPlaying(false);
+      else frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [playing, finished, replayDuration]);
+  useEffect(() => {
+    if (!finished || !replayId) return;
+    const key = `mtr.replay:${replayId}`;
+    try {
+      if (recording.current.length > 1) {
+        sessionStorage.setItem(key, JSON.stringify({ quote, points: recording.current }));
+      } else {
+        const saved = JSON.parse(sessionStorage.getItem(key) || "null");
+        if (saved?.quote === quote && Array.isArray(saved.points) && saved.points.length > 1 && saved.points.length <= 10000 && saved.points.every((point: {at: number; text: string}) => Number.isFinite(point.at) && point.at >= 0 && typeof point.text === "string" && point.text.length <= quote.length + 10)) {
+          recording.current = saved.points;
+          setReplayAt(saved.points.at(-1).at);
+        }
+      }
+    } catch { /* Replay remains available in memory when storage is unavailable. */ }
+  }, [finished, replayId, quote]);
   const chars = Array.from(typed),
     length = chars.length;
   const ranges = wordRanges(quote);
@@ -60,6 +104,9 @@ export const RaceTyping = memo(function RaceTyping({
   function change(type: RaceEdit["type"], text?: string) {
     if (!enabled || latest.current === quote || modal) return;
     const next = editText(latest.current, { seq: 1, type, text }, quote);
+    const now = performance.now();
+    recordingStart.current ??= now;
+    recording.current.push({ at: Math.max(1, now - recordingStart.current), text: next });
     latest.current = next;
     setTyped(next);
     onEdit(type, text, next === quote);
@@ -75,14 +122,8 @@ export const RaceTyping = memo(function RaceTyping({
   const done = typed === quote;
   const needsFocus = enabled && !focused && !done;
   return (
-    <div className={`race-type-area ${enabled ? "" : "race-type-inactive"}`}>
-      {done && !warmup ? (
-        <div className="race-finish-pending" role="status">
-          <Check size={34} />
-          <strong>quote complete!</strong>
-          <span>confirming your finish…</span>
-        </div>
-      ) : <div
+    <div className={`race-type-area ${enabled || finished || done ? "" : "race-type-inactive"}`}>
+      <div
         className={`words-viewport ${needsFocus ? "unfocused" : ""}`}
         style={{ height: config.fontSize * 4.875 }}
         onClick={() => input.current?.focus()}
@@ -144,9 +185,10 @@ export const RaceTyping = memo(function RaceTyping({
               </span>
             </span>
           ))}
-          {!done && (
+          {(
             <div
               ref={caret}
+              style={{ visibility: done ? "hidden" : "visible" }}
               className={`caret ${config.caretStyle} ${enabled ? "" : "blink"}`}
             />
           )}
@@ -159,16 +201,22 @@ export const RaceTyping = memo(function RaceTyping({
             click here to focus
           </button>
         )}
-      </div>}
-      <div className="race-typing-hint" aria-live="polite">
-        {done
+      </div>
+      {finished && recording.current.length > 1 ? (
+        <div className="race-replay-controls" aria-label="Your typing replay">
+          <button onClick={() => { if (playing) setPlaying(false); else { if (replayAt === null || replayAt >= replayDuration) { replayPosition.current = 0; setReplayAt(0); } setPlaying(true); } }}><RotateCw size={16}/>{playing ? "pause replay" : "replay"}</button>
+          <input aria-label="Replay position" type="range" min={0} max={replayDuration} step={1} value={replayAt ?? replayDuration} onChange={event => { setPlaying(false); replayPosition.current = Number(event.target.value); setReplayAt(replayPosition.current); }}/>
+          <span>{((replayAt ?? replayDuration) / 1000).toFixed(1)}s</span>
+        </div>
+      ) : <div className="race-typing-hint" aria-live="polite">
+        {finished ? "" : done
           ? (warmup ? "quote complete" : "")
           : correctPrefix(typed, quote) < length
             ? "backspace to fix this word before moving on"
             : enabled
               ? (warmup ? "" : "type the quote · correct mistakes to move forward")
               : "get ready — everyone starts together"}
-      </div>
+      </div>}
     </div>
   );
 });

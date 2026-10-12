@@ -74,6 +74,25 @@ test("friend race: invite, ready, shared quote, corrections, standings and remat
     await expect(friend.getByLabel("Race results")).toBeVisible({
       timeout: 12000,
     });
+    const quoteArea = host.locator(".race-quote-stage");
+    await expect(quoteArea.locator(".word")).toHaveCount(quote.split(" ").length);
+    const nextRace = host.getByRole("button", { name: "Next race", exact: true });
+    await expect(nextRace.locator("kbd")).toHaveCount(2);
+    const quoteBox = await quoteArea.boundingBox();
+    const nextBox = await nextRace.boundingBox();
+    const statsBox = await host.locator(".race-finish-heading").boundingBox();
+    expect(quoteBox!.y + quoteBox!.height).toBeLessThan(nextBox!.y);
+    expect(nextBox!.y + nextBox!.height).toBeLessThan(statsBox!.y);
+    const replay = host.getByRole("slider", { name: "Replay position" });
+    await replay.focus();
+    await replay.press("Home");
+    await expect(quoteArea.locator(".correct")).toHaveCount(0);
+    await host.getByRole("button", { name: "replay", exact: true }).click();
+    await expect(host.getByRole("button", { name: "pause replay", exact: true })).toBeVisible();
+    await expect.poll(() => quoteArea.locator(".correct").count()).toBeGreaterThan(0);
+    await host.getByRole("button", { name: "pause replay", exact: true }).click();
+    await replay.focus();
+    await replay.press("End");
     await expect(host.locator(".race-standings tbody tr")).toHaveCount(2);
     await expect(
       host.getByRole("button", { name: "rematch", exact: true }),
@@ -86,6 +105,7 @@ test("friend race: invite, ready, shared quote, corrections, standings and remat
     await host.setViewportSize({width:1280,height:800});
     await host.reload();
     await expect(host.getByLabel("Race results")).toBeVisible();
+    await expect(host.getByRole("slider", { name: "Replay position" })).toBeVisible();
     await host.getByRole("button", { name: "rematch", exact: true }).click();
     await expect(
       friend.getByRole("region", { name: "Race lobby" }),

@@ -8,16 +8,16 @@ import { raceRequest } from "@/lib/race-client";
 const subscribePlatform = () => () => {};
 const readMacPlatform = () => /Mac|iPhone|iPad/.test(navigator.platform);
 const serverMacPlatform = () => true;
-export function useRaceEntry() {
+export function useRaceEntry({ enabled = true, nameOverride }: { enabled?: boolean; nameOverride?: string } = {}) {
   const { user, modal } = useApp(), router = useRouter();
   const [name, setName] = useStored("mtr.racer-name", "");
   const [busy, setBusy] = useState(""), [error, setError] = useState("");
   const joining = useRef(false);
   const [heldKeys, setHeldKeys] = useState({ modifier: false, enter: false });
   const isMac = useSyncExternalStore(subscribePlatform, readMacPlatform, serverMacPlatform);
-  const displayName = name || user?.name || "";
+  const displayName = nameOverride || name || user?.name || "";
   const enter = useCallback(async (action: "queue" | "create") => {
-    if (joining.current || modal) return;
+    if (!enabled || joining.current || modal) return;
     joining.current = true;
     setBusy(action); setError("");
     try {
@@ -29,8 +29,9 @@ export function useRaceEntry() {
       setError(e instanceof Error ? e.message : "Unable to join.");
       joining.current = false; setBusy("");
     }
-  }, [modal, displayName, setName, router]);
+  }, [enabled, modal, displayName, setName, router]);
   useEffect(() => {
+    if (!enabled) return;
     const clearKeys = () => setHeldKeys({ modifier: false, enter: false });
     const updateKeys = (event: KeyboardEvent) => {
       if (modal || document.querySelector('dialog[open], [role="dialog"], :popover-open')) {
@@ -65,6 +66,6 @@ export function useRaceEntry() {
       window.removeEventListener("blur", clearKeys);
       document.removeEventListener("visibilitychange", onVisibility);
     };
-  }, [enter, isMac, modal]);
+  }, [enabled, enter, isMac, modal]);
   return { busy, error, enter, isMac, heldKeys };
 }

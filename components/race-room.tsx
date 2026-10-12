@@ -7,7 +7,8 @@ import { useStored } from "@/lib/store";
 import { useRaceRoom } from "./use-race-room";
 import { RaceTyping } from "./race-typing";
 import { racerName } from "@/lib/racer-name";
-import { raceRequest } from "@/lib/race-client";
+import { useRaceEntry } from "./use-race-entry";
+import { RaceEnterButton } from "./race-enter-button";
 import {
   ArrowRight,
   Check,
@@ -45,6 +46,7 @@ export function RaceRoom({ id }: { id: string }) {
     room.phase !== "waiting" &&
     room.phase !== "finished";
   const finished = !!me?.finishedAt || room?.phase === "finished";
+  const nextEntry = useRaceEntry({ enabled: finished && !busy, nameOverride: me?.name });
   const finishHeading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
     if (finished) finishHeading.current?.focus({ preventScroll: true });
@@ -87,24 +89,6 @@ export function RaceRoom({ id }: { id: string }) {
       setBusy(false);
     }
   }
-  const joiningNext = useRef(false);
-  async function raceAgain() {
-    if (joiningNext.current || busy) return;
-    joiningNext.current = true;
-    setLocalError("");
-    setBusy(true);
-    try {
-      const next = await raceRequest({
-        action: "queue",
-        name: racerName(me?.name || name),
-      });
-      router.push(`/race/${next.id}`);
-    } catch (e) {
-      setLocalError(e instanceof Error ? e.message : "Unable to join.");
-      joiningNext.current = false;
-      setBusy(false);
-    }
-  }
   if (!room)
     return (
       <div className="race-loading">
@@ -124,7 +108,7 @@ export function RaceRoom({ id }: { id: string }) {
   });
   const place = ranking.findIndex((p) => p.id === me?.id) + 1;
   const ready = room.players.length >= 2 && room.players.every((p) => p.ready);
-  const message = localError || error;
+  const message = nextEntry.error || localError || error;
   return (
     <div className="race-room">
       <div className="race-room-toolbar">
@@ -294,9 +278,9 @@ export function RaceRoom({ id }: { id: string }) {
                   </div>
                 ))}
               </div>
-              {!finished && (
-                <>
+              <div className="race-quote-stage">
                   <div className="race-status" aria-live="polite">
+                    {finished ? <span>finished</span> : <>
                     {!underway ? (
                       <>
                         <span className="race-countdown">{count}</span> get
@@ -314,19 +298,22 @@ export function RaceRoom({ id }: { id: string }) {
                         </small>
                       </>
                     )}
+                    </>}
                   </div>
                   <RaceTyping
                     key={`${room.id}:${room.round}`}
                     quote={room.quote}
                     initial={room.me.typed}
-                    enabled={underway && now < room.deadline!}
+                    enabled={!finished && underway && now < room.deadline!}
+                    finished={finished}
+                    replayId={`${room.id}:${room.round}`}
                     onEdit={edit}
                   />
                   <div className="quote-source">{room.source}</div>
-                </>
-              )}
+              </div>
               {finished && (
                 <div className="race-results" aria-label="Race results">
+                  <div className="race-launch-primary race-next-action"><RaceEnterButton entry={nextEntry} label="Next race" /></div>
                   <div className={`race-finish-heading ${me?.finishedAt ? "is-complete" : ""}`}>
                     <div className="race-finish-title">
                       <div className="race-place-badge" aria-hidden="true">
@@ -346,13 +333,6 @@ export function RaceRoom({ id }: { id: string }) {
                     </dl>
                   </div>
                   <div className="race-result-buttons">
-                    <button
-                        className="race-primary"
-                        disabled={busy}
-                        onClick={raceAgain}
-                      >
-                        Next race <ArrowRight size={18} />
-                      </button>
                     {room.kind === "private" && host && (
                       <button
                         disabled={busy || room.phase !== "finished"}

@@ -1,3 +1,4 @@
+import { comparisons } from "@/lib/comparisons";
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/seo";
 import { guides } from "@/lib/guides";
@@ -9,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/licenses",
     "/leaderboards",
     "/guides",
+    "/compare",
+    ...comparisons.map((a) => `/compare/${a.slug}`),
     "/typing-race-with-friends",
     "/1-minute-typing-test",
     "/quote-typing-practice",

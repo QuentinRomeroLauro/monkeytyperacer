@@ -1,0 +1,434 @@
+[
+  {
+    "slug": "monkeytype-vs-typeracer",
+    "title": "Monkeytype vs TypeRacer: which should you use?",
+    "description": "Choose between configurable solo practice and quote racing, with a fair way to compare your results.",
+    "verdict": "Choose Monkeytype when you want to control the test. Choose TypeRacer when you want a race to give the session a purpose. Both offer quote practice; quotes alone are not a reason to switch.",
+    "columns": ["Decision", "Monkeytype", "TypeRacer"],
+    "rows": [
+      [
+        "Main experience",
+        "Configurable solo typing tests",
+        "Live races, plus solo practice"
+      ],
+      [
+        "Text choices observed",
+        "Time, words, quote, zen and custom modes",
+        "Quote practice and themed universes"
+      ],
+      [
+        "Practice without an account",
+        "Typing interface opens directly",
+        "Practice Yourself opens as Guest"
+      ],
+      [
+        "Playing with friends",
+        "No friend-room control in the reviewed test screen",
+        "Create Racetrack is a dedicated entry"
+      ],
+      [
+        "Choose it for",
+        "Repeating a controlled exercise",
+        "Competing on a shared race task"
+      ]
+    ],
+    "images": ["monkeytype", "typeracer"],
+    "sections": [
+      {
+        "title": "Start with what you want to repeat",
+        "paragraphs": [
+          "A good typing site makes the activity you need easy to repeat. If you want to work through a word list, change the duration, or practice specific text, Monkeytype puts those choices beside the typing area. Its time, words, quote, zen and custom controls were visible in our review. You can change the task without turning it into a competition.",
+          "TypeRacer puts the race first, but it also has a Practice Yourself option. We opened that option as a guest and reached a single-player quote with a typing field. You do not have to join a public race every time you want to use it. Choose the social setting when opponents motivate you; choose practice when you want fewer variables."
+        ]
+      },
+      {
+        "title": "A different WPM does not identify the better tool",
+        "paragraphs": [
+          "A short familiar word list and a passage with capitals and punctuation are different tests. Before comparing scores, match the text style and test length as closely as possible. Monkeytype has quote mode, so comparing its default word list against a TypeRacer passage is an avoidable mismatch.",
+          "Correction rules and timing also affect the result. We do not publish a fixed conversion such as “subtract 10 WPM”: this review did not run a controlled benchmark. Keep a baseline within one mode, then use another site as a different exercise rather than a replacement measuring instrument."
+        ]
+      },
+      {
+        "title": "What the screens actually let you do",
+        "paragraphs": [
+          "Monkeytype’s quote control exposes length choices, including short and long. That makes it a sensible place to vary reading and punctuation difficulty while keeping the familiar test interface. The screenshot shows that quote mode exists; it is not restricted to random words.",
+          "TypeRacer’s home screen separates Enter a Typing Race, Practice Yourself and Create Racetrack. Its guest message says an account saves races and gives access to detailed stats. Some curated-text selectors were disabled in our guest view, so do not assume every text option is available under the same access conditions."
+        ]
+      },
+      {
+        "title": "When staying with your current site makes sense",
+        "paragraphs": [
+          "Stay with Monkeytype if its solo controls already support your routine. Stay with TypeRacer if your friends already use its tracks or racing helps you return consistently. There is no evidence in this review that changing sites alone improves typing ability. A repeatable practice habit is a better reason to choose than a flattering single score."
+        ]
+      },
+      {
+        "title": "Want practice and small friend races together?",
+        "paragraphs": [
+          "Monkeytype Racer, the site publishing this article, offers solo practice and private rooms for two to five total racers. Everyone in a room receives the same quote and shared start; mistakes must be corrected to finish. It is an option for that combined workflow, not an official Monkeytype or TypeRacer mode.",
+          "Our five-racer limit is a real constraint. We are not recommending our product as a substitute for every established competition, community or advanced practice setting. If your current tool fits, keep it; try a friend room when the group experience is what you are missing."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Monkeytype: modes and quote practice",
+        "url": "https://monkeytype.com/"
+      },
+      {
+        "label": "TypeRacer: racing, solo practice and friend tracks",
+        "url": "https://play.typeracer.com/"
+      }
+    ],
+    "cta": "/typing-race-with-friends",
+    "ctaLabel": "Try a friends race"
+  },
+  {
+    "slug": "best-typing-games-with-friends",
+    "title": "Best typing games to play with friends",
+    "description": "Four options for a group session, compared by setup, room controls and what you should check before inviting everyone.",
+    "verdict": "For a small guest-friendly session, consider Monkeytype Racer or TypeRacer. For more room controls, inspect Typer.io. If your group already enjoys Nitro Type’s game progression, start there and check its current friend settings.",
+    "columns": ["Game", "Best reason to consider it", "Setup or limit to know"],
+    "rows": [
+      [
+        "TypeRacer",
+        "Dedicated friend racetracks alongside public racing",
+        "Create Racetrack is visible; capacity not verified here"
+      ],
+      [
+        "Typer.io",
+        "Configurable private lobbies",
+        "Guest lobby showed custom difficulty and size options up to 75; not load-tested"
+      ],
+      [
+        "Nitro Type",
+        "Racing with cars and recurring game content",
+        "Intro typing opens without login; friend-party setup was not exercised"
+      ],
+      [
+        "Monkeytype Racer (ours)",
+        "A small shared-quote race with simple rematches",
+        "2–5 total racers, including the host; guests welcome"
+      ]
+    ],
+    "images": ["typeracer", "nitrotype"],
+    "sections": [
+      {
+        "title": "Choose the group experience before the game",
+        "paragraphs": [
+          "The best choice depends on the event you are trying to run. Two friends playing a quick rematch need less setup than a large group with custom passages. Decide how many people will join, whether they will create accounts, and whether everyone must type the same text. Those questions are more useful than a generic “best overall” score.",
+          "This shortlist includes products with an explicit racing or group-play proposition. It does not treat solo tests with leaderboards as interchangeable with a shared live room. Our checks cover the entry screens and the actions described below, not the reliability of a full event under load."
+        ]
+      },
+      {
+        "title": "TypeRacer: an explicit friend-race entry",
+        "paragraphs": [
+          "TypeRacer’s home page has a Race your friends section and a Create Racetrack button, separate from its public queue and solo practice. That separation makes the intended setup easy to find. It is a natural option when your group wants quote racing or already knows TypeRacer.",
+          "Before an event, open the friend flow and verify the access and capacity your group needs. We inspected the entry and opened solo practice, but did not complete a multi-person private event. We therefore do not give a tested player limit or claim that every curated-text option is available to guests."
+        ]
+      },
+      {
+        "title": "Typer.io: more controls for the organizer",
+        "paragraphs": [
+          "We opened Group Play from Typer.io and reached a private lobby as a guest. The screen offered easy, medium, hard, random and custom difficulty, a start-time field, an invitation control and a Start Game button. Maximum-player options ran from 5 to 75.",
+          "That is stronger evidence for configurable groups than a vague multiplayer label. It is still a menu limit, not proof that 75 concurrent players will perform well. Run a small rehearsal before a large event. The lobby also displayed chat, which may matter if you are choosing a setting for a supervised group."
+        ]
+      },
+      {
+        "title": "Nitro Type: a continuing game rather than just a room",
+        "paragraphs": [
+          "Nitro Type’s official site presents racing alongside car collections, a shop and recurring seasonal content. Its Play Now link opened an introductory typing exercise without a login. The site also describes friend play and teacher controls that can restrict it.",
+          "Choose it when those game systems are part of the appeal, especially if your friends already use it. We did not exercise an authenticated friend invitation, so check that flow and any teacher-imposed restrictions before planning a session around it. Do not confuse access to the introductory exercise with verification of every social feature."
+        ]
+      },
+      {
+        "title": "Monkeytype Racer: a small room, one shared task",
+        "paragraphs": [
+          "Our private rooms support two to five racers including the host. Share a fresh link, have everyone choose a name and ready up, then start the shared countdown. Everyone types the same quote and must correct errors to finish. The host can open another round after the race ends.",
+          "This is the option we built for small groups who want a straightforward race and solo practice nearby. It does not provide the larger lobby controls seen on Typer.io or Nitro Type’s classroom administration. For a casual series, agree how to handle disconnects and record round wins separately; our standings describe one race at a time."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "TypeRacer: racing, solo practice and friend tracks",
+        "url": "https://play.typeracer.com/"
+      },
+      {
+        "label": "Typer.io: group play and private-lobby controls",
+        "url": "https://typer.io/"
+      },
+      {
+        "label": "Nitro Type: game, teacher portal and current updates",
+        "url": "https://www.nitrotype.com/"
+      }
+    ],
+    "cta": "/typing-race-with-friends",
+    "ctaLabel": "Try a friends race"
+  },
+  {
+    "slug": "typeracer-alternatives",
+    "title": "TypeRacer alternatives, matched to what you want next",
+    "description": "Keep live racing, add solo control, or choose a game with more progression. Four alternatives with different jobs.",
+    "verdict": "Keep TypeRacer if quote racing already fits. Choose Monkeytype for configurable solo work, Typer.io for private-lobby controls, Nitro Type for game progression, or Monkeytype Racer for small guest rooms beside solo practice.",
+    "columns": ["Alternative", "Reason to switch", "Tradeoff"],
+    "rows": [
+      [
+        "Monkeytype",
+        "More control over a solo test",
+        "Solo test screen is not a friend racetrack"
+      ],
+      [
+        "Typer.io",
+        "Private-lobby difficulty, size and start controls",
+        "Rehearse your group size; menu capacity is not a performance guarantee"
+      ],
+      [
+        "Nitro Type",
+        "Cars, recurring content and teacher-facing features",
+        "A different game loop; verify friend and account requirements"
+      ],
+      [
+        "Monkeytype Racer (ours)",
+        "Shared quote races plus focused practice",
+        "Five total racers per private room"
+      ]
+    ],
+    "images": ["monkeytype", "typeracer"],
+    "sections": [
+      {
+        "title": "Name the problem before replacing the tool",
+        "paragraphs": [
+          "An alternative is useful only if it changes something you care about. If you enjoy TypeRacer’s quote races, switching to a solo word test can remove the very reason you practice. If you want to isolate one recurring mistake, a public race may be more pressure than help. Start with the task, not a list of vaguely similar websites.",
+          "TypeRacer itself includes solo practice, so “I want to type alone sometimes” does not automatically require leaving. Its home page also separates friend tracks from public races. Try the relevant existing mode before assuming the product lacks it."
+        ]
+      },
+      {
+        "title": "For controlled solo work: Monkeytype",
+        "paragraphs": [
+          "Monkeytype exposes time, word-count, quote, zen and custom modes in the test interface. That is useful when you want to repeat similar conditions or focus on selected text. Quote mode also gives you a way to practice prose without a public race.",
+          "The tradeoff is the reviewed screen’s solo focus. We did not find a friend-room control there, and are not treating a score leaderboard as a live invitation system. Use Monkeytype as a complement if you still want TypeRacer’s social sessions."
+        ]
+      },
+      {
+        "title": "For organizer controls: Typer.io",
+        "paragraphs": [
+          "Typer.io’s private lobby was the most explicitly configurable group screen in this review: difficulty options, a custom option, a start-time field and multiple maximum-player choices were visible. We reached it without creating an account.",
+          "Those controls may solve a specific organizing need, but verify your intended passage, group size and moderation needs before switching an event. We did not run a large group test. TypeRacer may remain the simpler choice if everyone already has a working friend-track routine."
+        ]
+      },
+      {
+        "title": "For a longer-running game: Nitro Type",
+        "paragraphs": [
+          "Nitro Type’s official homepage emphasizes car racing, current seasonal content and a teacher portal. The initial Play Now flow reached a typing exercise without requiring login. It is a candidate when collecting and returning to a game is more motivating than adjusting a test.",
+          "It is not a like-for-like replacement for every quote race. We did not benchmark learning gains or exercise its authenticated friend-party setup. Evaluate the actual game flow with your group rather than importing your TypeRacer score as a promise of performance."
+        ]
+      },
+      {
+        "title": "For practice and a small friend room: Monkeytype Racer",
+        "paragraphs": [
+          "Our product combines direct quote and one-minute practice with private races for up to five total participants. Guests can join, players receive a shared quote and start, and a corrected finish determines completion. Rematches keep the group together for another round.",
+          "Choose it for that specific workflow. Keep TypeRacer if its community, competition structure or existing group habits are what you value. Our product has no automatic tournament bracket and is not designed to replace a larger event room. The linked hosting guide explains a manually scored first-to-two series."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "TypeRacer: racing, solo practice and friend tracks",
+        "url": "https://play.typeracer.com/"
+      },
+      {
+        "label": "Monkeytype: modes and quote practice",
+        "url": "https://monkeytype.com/"
+      },
+      {
+        "label": "Typer.io: group play and private-lobby controls",
+        "url": "https://typer.io/"
+      },
+      {
+        "label": "Nitro Type: game, teacher portal and current updates",
+        "url": "https://www.nitrotype.com/"
+      }
+    ],
+    "cta": "/typing-race-with-friends",
+    "ctaLabel": "Try a friends race"
+  },
+  {
+    "slug": "monkeytype-alternatives",
+    "title": "Monkeytype alternatives for different kinds of practice",
+    "description": "A reason-based shortlist for key-focused exercises, live competition, group controls and combined practice.",
+    "verdict": "Keep Monkeytype for configurable solo tests. Consider Keybr for visible key-by-key feedback, TypeRacer for quote races, Typer.io for group controls, or Monkeytype Racer for small friend races beside solo practice.",
+    "columns": ["Need", "Candidate", "What we checked"],
+    "rows": [
+      [
+        "Key-by-key practice",
+        "Keybr",
+        "Current-key status, key progression display and practice text"
+      ],
+      [
+        "Quote racing",
+        "TypeRacer",
+        "Public and friend-race entries; guest solo practice"
+      ],
+      [
+        "Configurable private groups",
+        "Typer.io",
+        "Guest lobby with custom difficulty and size controls"
+      ],
+      [
+        "Solo practice plus small friend races",
+        "Monkeytype Racer (ours)",
+        "Direct practice and private rooms for 2–5 total racers"
+      ]
+    ],
+    "images": ["monkeytype", "typeracer"],
+    "sections": [
+      {
+        "title": "You may need a second tool, not a replacement",
+        "paragraphs": [
+          "Monkeytype already offers quote mode, custom text and several test formats. A desire for punctuation practice or a different test length is a reason to explore those controls before moving elsewhere. A new site that only changes the colors may not change the practice you actually do.",
+          "This shortlist is organized around different activities. It does not claim that any product is universally faster, more accurate or better at teaching. We reviewed entry screens and selected controls, not weeks of training outcomes."
+        ]
+      },
+      {
+        "title": "Keybr: make individual keys visible",
+        "paragraphs": [
+          "Keybr’s practice screen shows an all-keys display, a current key, speed and accuracy metrics, a daily goal and an on-screen keyboard. In our fresh session, some keys were active while others were dimmed, and the current key needed more samples. That makes key-level practice an explicit part of the interface.",
+          "Try it if you want more attention on individual letters than on one final WPM number. It is not merely a stripped-down Monkeytype clone. Its navigation also includes Multiplayer and Typing Test, so it would be inaccurate to describe Keybr as having no competitive features. Those additional modes were not tested in this review."
+        ]
+      },
+      {
+        "title": "TypeRacer: add a reason to finish the passage",
+        "paragraphs": [
+          "TypeRacer gives you public races, a friend-track entry and solo quote practice. We opened Practice Yourself as a guest. It is a sensible complement when another racer makes a session more engaging than a timer alone.",
+          "Do not switch because someone promises a predictable WPM difference. Quote length, punctuation, timing and correction behavior all change the task. Compare practice within consistent settings. Racing and solo drills can serve different purposes without either score being an absolute measure of your ability."
+        ]
+      },
+      {
+        "title": "Typer.io: organize the group",
+        "paragraphs": [
+          "Typer.io has Quick Play, Solo Play and Group Play entries. Group Play opened a guest private lobby with difficulty settings, a custom option, a start-time field and maximum-player controls. That is a concrete reason to investigate it when your need is organizing friends rather than changing solo themes.",
+          "Check the controls with a small group before a larger session. A displayed capacity is not a tested concurrency result, and the presence of chat may affect whether it fits your setting. We did not review moderation controls or classroom administration."
+        ]
+      },
+      {
+        "title": "Monkeytype Racer: keep solo practice near your races",
+        "paragraphs": [
+          "Our quote and one-minute pages are directly playable. Private rooms allow two to five total racers, including the host, with a shared quote and start. The accuracy guide includes launchable custom drills and a missed-word practice action after an imperfect result.",
+          "This combination may fit someone who wants solo work between friend races. It is not an official version of Monkeytype, and we do not claim full feature parity. If your current routine depends on a particular advanced setting, check it before moving. Keep Monkeytype when its existing controls already solve the problem."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Monkeytype: modes and quote practice",
+        "url": "https://monkeytype.com/"
+      },
+      {
+        "label": "Keybr: practice, current-key metrics and multiplayer navigation",
+        "url": "https://www.keybr.com/"
+      },
+      {
+        "label": "TypeRacer: racing, solo practice and friend tracks",
+        "url": "https://play.typeracer.com/"
+      },
+      {
+        "label": "Typer.io: group play and private-lobby controls",
+        "url": "https://typer.io/"
+      }
+    ],
+    "cta": "/quote-typing-practice",
+    "ctaLabel": "Try quote practice"
+  },
+  {
+    "slug": "monkeytype-vs-nitro-type",
+    "title": "Monkeytype vs Nitro Type: practice tool or racing game?",
+    "description": "Compare two different ways to keep typing: configurable solo tests and a game built around racing and progression.",
+    "verdict": "Choose Monkeytype for control over a solo typing session. Choose Nitro Type if racing, cars and recurring game content help you return. For classroom management, inspect Nitro Type’s teacher portal rather than assuming a solo test provides the same tools.",
+    "columns": ["Decision", "Monkeytype", "Nitro Type"],
+    "rows": [
+      [
+        "Main experience",
+        "Configurable typing tests",
+        "Competitive car-racing game"
+      ],
+      [
+        "Entry we reviewed",
+        "Typing screen and quote-mode controls",
+        "Play Now introductory typing exercise"
+      ],
+      [
+        "Controls or content observed",
+        "Time, words, quote, zen, custom; punctuation and numbers",
+        "Current car/shop and seasonal announcements"
+      ],
+      [
+        "Teacher administration",
+        "Not evaluated as a classroom-management product",
+        "Official site describes a teacher portal and restrictions"
+      ],
+      [
+        "Choose it when",
+        "You want repeatable practice conditions",
+        "The game loop helps motivate the session"
+      ]
+    ],
+    "images": ["monkeytype", "nitrotype"],
+    "sections": [
+      {
+        "title": "These products organize attention differently",
+        "paragraphs": [
+          "Monkeytype puts the test configuration close to the text. In our review, time, words, quote, zen and custom modes were available alongside punctuation and number controls. The activity is easy to frame as “repeat this kind of test and inspect the result.”",
+          "Nitro Type presents typing as a racing game. Its official homepage combines Play Now with current car, shop and seasonal announcements. The initial play flow loaded an introductory typing exercise without asking us to log in. That demonstrates an accessible first step, not unrestricted access to every social or progression feature."
+        ]
+      },
+      {
+        "title": "Practice control versus reasons to return",
+        "paragraphs": [
+          "Choose Monkeytype when you want to change one variable at a time: the text type, duration or custom exercise. Quote mode means it can also support prose practice; it should not be characterized as a random-word-only tool.",
+          "Choose Nitro Type when the continuing game is part of why you want to practice. Cars and recurring content may make a session more appealing to a particular person. That is a preference-based recommendation, not a claim that game rewards produce a measured improvement in typing speed. We did not conduct a training study."
+        ]
+      },
+      {
+        "title": "Classroom features are a separate decision",
+        "paragraphs": [
+          "Nitro Type’s official site describes a teacher portal with access controls, reporting and restrictions on friend or team play. If you manage students, investigate those specific controls and your institution’s requirements. An appealing game alone does not establish suitability for every school.",
+          "This review inspected the public description, not an authenticated teacher account. We do not independently certify the site’s safety or compliance claims. Monkeytype’s public test controls were the scope of our inspection; we are not evaluating it as a classroom administration system."
+        ]
+      },
+      {
+        "title": "Do not use one score to decide which is better",
+        "paragraphs": [
+          "A WPM comparison is meaningful only when you understand the text, duration and scoring rules behind it. The first task offered by two products may be very different. A familiar short phrase can produce a different score from unfamiliar prose without showing a change in your underlying skill.",
+          "Try the product whose activity you are more likely to repeat, then track a baseline inside that product. If you need to improve capitals or punctuation, choose exercises that contain them. Avoid judging a practice routine entirely by whether a race was won or a personal best appeared."
+        ]
+      },
+      {
+        "title": "A third option for small friend groups",
+        "paragraphs": [
+          "Monkeytype Racer, our product, offers solo quote and timed practice alongside small private races. It can suit a group that wants shared quotes and rematches without making collections the main activity. Our rooms hold two to five total racers.",
+          "We do not provide Nitro Type’s teacher portal or claim to reproduce its game economy. We also do not claim complete parity with Monkeytype’s settings. Choose us for our particular mix of practice and small-group racing, or choose either of the two products above when its strengths match your needs."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Monkeytype: modes and quote practice",
+        "url": "https://monkeytype.com/"
+      },
+      {
+        "label": "Nitro Type: game, teacher portal and current updates",
+        "url": "https://www.nitrotype.com/"
+      },
+      {
+        "label": "Nitro Type first-play entry",
+        "url": "https://www.nitrotype.com/race"
+      },
+      {
+        "label": "Nitro Type teacher portal information",
+        "url": "https://www.nitrotype.com/teachers"
+      }
+    ],
+    "cta": "/typing-race-with-friends",
+    "ctaLabel": "Try a friends race"
+  }
+]

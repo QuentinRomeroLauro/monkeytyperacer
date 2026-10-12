@@ -1987,3 +1987,24 @@ button:disabled { cursor:not-allowed; }
   .guide-tool { padding: 18px; }
   .landing-practice { padding: 20px 0; }
 }
+
+/* Source-backed product comparisons */
+.comparison-disclosure { color:var(--sub-color); font-size:11px; line-height:1.8; max-width:660px; margin-top:24px; }
+.comparison-verdict { border-left:3px solid var(--main-color); background:var(--sub-alt-color); padding:24px 30px; border-radius:0 12px 12px 0; margin-bottom:36px; }
+.comparison-verdict>p:last-child { font-family:"Space Grotesk",sans-serif; font-size:clamp(18px,2.2vw,24px); line-height:1.6; margin:12px 0 0; max-width:900px; }
+.comparison-table { overflow-x:auto; margin:0 0 40px; border:1px solid var(--sub-alt-color); border-radius:12px; }
+.comparison-table table { width:100%; min-width:580px; border-collapse:collapse; text-align:left; font-size:12px; line-height:1.8; }
+.comparison-table caption { text-align:left; padding:18px 22px; color:var(--sub-color); font-size:11px; }
+.comparison-table th,.comparison-table td { padding:18px 22px; border-top:1px solid var(--sub-alt-color); vertical-align:top; }
+.comparison-table thead th { color:var(--main-color); background:var(--sub-alt-color); }
+.comparison-table tbody th { width:25%; font-weight:500; }
+.comparison-table td { width:37.5%; }
+.comparison-screens { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:48px; align-items:start; }
+.comparison-screens .product-figure { margin:0; min-width:0; }
+.comparison-screen-label { display:flex; justify-content:space-between; gap:12px; padding:12px 16px; font-size:10px; background:var(--sub-alt-color); }
+.comparison-screen-label span { color:var(--sub-color); }
+.comparison-screens img { display:block; width:100%; height:auto; }
+.comparison-article #sources { border-top:1px solid var(--sub-alt-color); padding-top:30px; }
+.comparison-article #sources ul { padding-left:20px; font-size:12px; line-height:2; }
+.comparison-article #sources a { color:var(--main-color); text-decoration:underline; text-underline-offset:3px; }
+@media(max-width:700px) { .comparison-screens { grid-template-columns:1fr; } .comparison-verdict { padding:20px; } .comparison-table th,.comparison-table td { padding:14px; } }

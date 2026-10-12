@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import { ActivityLinks, GuideCards } from "@/components/editorial";
 export const metadata = pageMetadata(
@@ -21,6 +22,15 @@ export default function GuidesPage() {
         </p>
       </header>
       <GuideCards />
+      <section className="editorial-bottom">
+        <h2>Choosing a typing tool?</h2>
+        <p className="editorial-deck">
+          Compare solo practice, quote racing and games to play with friends.
+        </p>
+        <Link className="editorial-cta" href="/compare">
+          Explore the comparisons →
+        </Link>
+      </section>
       <section className="editorial-bottom">
         <p className="editorial-eyebrow">put it into practice</p>
         <ActivityLinks />

@@ -395,8 +395,8 @@ export function RaceRoom({ id }: { id: string }) {
                       remaining
                     </p>
                   )}
-                  <details className="race-analysis">
-                    <summary>your typing analysis</summary>
+                  <section className="race-analysis" aria-labelledby="race-analysis-heading">
+                    <h2 id="race-analysis-heading">your typing analysis</h2>
                     <Chart samples={room.me.samples} />
                     <p>
                       {me?.attempts ?? 0} keystrokes · {me?.errors ?? 0}{" "}
@@ -405,7 +405,7 @@ export function RaceRoom({ id }: { id: string }) {
                     <Link href="/practice">
                       practice another quote <ArrowRight size={14} />
                     </Link>
-                  </details>
+                  </section>
                 </div>
               )}
             </>

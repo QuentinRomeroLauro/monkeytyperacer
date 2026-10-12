@@ -1740,7 +1740,7 @@ button:disabled { cursor:not-allowed; }
 .race-standings .is-you { color:var(--main-color); background:var(--sub-alt-color); }
 .race-results-note { color:var(--sub-color); font-size:12px; line-height:1.7; margin-top:20px; }
 .race-analysis { margin-top:35px; color:var(--sub-color); font-size:13px; }
-.race-analysis summary { cursor:pointer; padding:12px 0; }
+.race-analysis h2 { margin:0; padding:12px 0; font-size:inherit; font-weight:400; }
 .race-analysis .chart { margin:20px 0; height:180px; }
 .race-analysis a { display:inline-flex; gap:8px; align-items:center; }
 .practice-navigation { display:flex; justify-content:space-between; color:var(--sub-color); font-size:12px; margin:0 0 25px; }

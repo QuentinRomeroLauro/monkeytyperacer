@@ -2008,3 +2008,15 @@ button:disabled { cursor:not-allowed; }
 .comparison-article #sources ul { padding-left:20px; font-size:12px; line-height:2; }
 .comparison-article #sources a { color:var(--main-color); text-decoration:underline; text-underline-offset:3px; }
 @media(max-width:700px) { .comparison-screens { grid-template-columns:1fr; } .comparison-verdict { padding:20px; } .comparison-table th,.comparison-table td { padding:14px; } }
+
+.comparison-picker { padding:28px; margin-bottom:40px; border:1px solid var(--sub-alt-color); border-radius:12px; background:var(--sub-alt-color); }
+.comparison-picker h2 { font-family:"Space Grotesk",sans-serif; font-size:24px; margin:8px 0 12px; letter-spacing:-.5px; }
+.comparison-picker p { font-size:12px; line-height:1.8; }
+.comparison-picker-controls { display:flex; align-items:flex-end; gap:16px; margin:24px 0 14px; }
+.comparison-picker-controls label { display:flex; flex-direction:column; gap:10px; flex:1; min-width:0; font-size:11px; color:var(--sub-color); }
+.comparison-picker-controls select { min-height:48px; width:100%; border:1px solid var(--sub-color); border-radius:6px; padding:10px 12px; background:var(--bg-color); color:var(--text-color); font:inherit; font-size:13px; }
+.comparison-picker-controls select:focus-visible { outline:2px solid var(--main-color); outline-offset:3px; }
+.comparison-picker-controls .editorial-cta { min-height:48px; white-space:nowrap; }
+.comparison-picker-vs { align-self:flex-end; padding-bottom:16px; color:var(--sub-color); font-size:12px; }
+.comparison-picker-note { color:var(--sub-color); margin:0; }
+@media(max-width:700px) { .comparison-picker { padding:20px; } .comparison-picker-controls { flex-direction:column; align-items:stretch; } .comparison-picker-controls label { flex:auto; } .comparison-picker-vs { display:none; } .comparison-picker-controls .editorial-cta { justify-content:center; } }

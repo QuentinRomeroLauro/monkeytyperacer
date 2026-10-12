@@ -5,6 +5,24 @@ export const comparisonImages: Record<
   string,
   { name: string; url: string; caption: string }
 > = {
+  keybr: {
+    name: "Keybr",
+    url: "https://www.keybr.com/",
+    caption:
+      "Keybr’s current-key status, lesson text and on-screen keyboard in a fresh practice session.",
+  },
+  typerio: {
+    name: "Typer.io",
+    url: "https://typer.io/",
+    caption:
+      "Typer.io’s home screen separates Quick Play, Solo Play and Group Play.",
+  },
+  mtr: {
+    name: "Monkeytype Racer",
+    url: "https://monkeytyperacer.com/practice",
+    caption:
+      "Our separate solo practice page defaults to quotes, with a link back to racing.",
+  },
   monkeytype: {
     name: "Monkeytype",
     url: "https://monkeytype.com/",

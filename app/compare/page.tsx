@@ -1,3 +1,4 @@
+import { ComparisonPicker } from "@/components/comparison-picker";
 import { ComparisonCards } from "@/components/comparison-cards";
 import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata(
@@ -20,6 +21,7 @@ export default function ComparePage() {
           choices by what you actually want to do.
         </p>
       </header>
+      <ComparisonPicker />
       <ComparisonCards />
     </div>
   );

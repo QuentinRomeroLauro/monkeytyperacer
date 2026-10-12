@@ -7,6 +7,7 @@ import { useStored } from "@/lib/store";
 import { useRaceRoom } from "./use-race-room";
 import { RaceTyping } from "./race-typing";
 import { racerName } from "@/lib/racer-name";
+import { raceStandings } from "@/lib/race-standings";
 import { useRaceEntry } from "./use-race-entry";
 import { RaceEnterButton } from "./race-enter-button";
 import {
@@ -99,14 +100,10 @@ export function RaceRoom({ id }: { id: string }) {
     );
   const host = room.host === me?.id;
   const count = Math.max(0, Math.ceil(((room.startAt ?? now) - now) / 1000));
-  const ranking = [...room.players].sort((a, b) => {
-    if (a.finishedAt && b.finishedAt)
-      return a.finishedAt - b.finishedAt || a.id.localeCompare(b.id);
-    if (a.finishedAt) return -1;
-    if (b.finishedAt) return 1;
-    return b.progress - a.progress;
-  });
-  const place = ranking.findIndex((p) => p.id === me?.id) + 1;
+  const ranking = raceStandings(room.players);
+  const myStanding = ranking.find(p => p.id === me?.id);
+  const place = myStanding?.place ?? 0;
+  const ordinal = `${place}${place === 1 ? "st" : place === 2 ? "nd" : place === 3 ? "rd" : "th"}`;
   const ready = room.players.length >= 2 && room.players.every((p) => p.ready);
   const message = nextEntry.error || localError || error;
   return (
@@ -249,13 +246,13 @@ export function RaceRoom({ id }: { id: string }) {
           {room.phase !== "waiting" && (
             <>
               <div className="race-progress-list" aria-label="Race progress">
-                {ranking.map((p, index) => (
+                {ranking.map((p) => (
                   <div
                     className={`race-progress ${p.id === room.me?.id ? "is-you" : ""} ${p.finishedAt ? "has-finished" : ""}`}
                     key={p.id}
                   >
                     <div>
-                      <span className="race-position">{index + 1}</span>
+                      <span className="race-position">{p.place}</span>
                       <span>
                         {p.name}
                         {p.id === room.me?.id ? " (You)" : ""}
@@ -317,11 +314,11 @@ export function RaceRoom({ id }: { id: string }) {
                   <div className={`race-finish-heading ${me?.finishedAt ? "is-complete" : ""}`}>
                     <div className="race-finish-title">
                       <div className="race-place-badge" aria-hidden="true">
-                        {me?.finishedAt ? <><Crown size={22} /><strong>{place}<small>{place === 1 ? "st" : place === 2 ? "nd" : place === 3 ? "rd" : "th"}</small></strong></> : <span>—</span>}
+                        {me?.finishedAt && <Crown size={22} />}<strong>{place}<small>{ordinal.slice(String(place).length)}</small></strong>
                       </div>
                       <div>
                         <h1 ref={finishHeading} tabIndex={-1}>
-                          {me?.finishedAt ? `you finished ${place}${place === 1 ? "st" : place === 2 ? "nd" : place === 3 ? "rd" : "th"}!` : "time’s up"}
+                          {myStanding?.tied ? `you tied for ${ordinal}` : me?.finishedAt ? `you finished ${ordinal}!` : `you placed ${ordinal}`}
                         </h1>
                         <p>{me?.finishedAt ? `out of ${room.players.length} racers` : "quote unfinished · give it another go"}</p>
                       </div>
@@ -361,12 +358,12 @@ export function RaceRoom({ id }: { id: string }) {
                         </tr>
                       </thead>
                       <tbody>
-                        {ranking.map((p, index) => (
+                        {ranking.map((p) => (
                           <tr
                             key={p.id}
                             className={p.id === room.me?.id ? "is-you" : ""}
                           >
-                            <td>{p.finishedAt ? index + 1 : "—"}</td>
+                            <td title={p.tied ? `Tied for place ${p.place}` : undefined}>{p.place}</td>
                             <td>
                               {p.name}
                               {p.id === room.me?.id ? " (You)" : ""}

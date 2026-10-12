@@ -34,3 +34,20 @@ for (const kind of ["private", "public"] as const) {
     expect(queueCalls).toBe(2);
   });
 }
+
+test("unfinished racers display tied places in results and tracks", async ({ page }) => {
+  const now = Date.now();
+  const players: Racer[] = ["winner", "you", "tied", "last"].map((id) => ({
+    id, session: id, name: id, ready: true, joinedAt: now - 40000, seenAt: now,
+    typed: id === "winner" ? "A short quote." : id === "last" ? "" : "A short",
+    samples: [], seq: 0, attempts: 14, errors: 0, finishedAt: id === "winner" ? now - 1000 : null, left: false,
+  }));
+  const state: RaceState = { id: "tied-room", kind: "public", phase: "finished", host: "winner", round: 1, quote: "A short quote.", source: "Test book", createdAt: now - 40000, startAt: now - 30000, deadline: now, players };
+  await page.route("**/api/race", route => route.fulfill({ json: raceView(state, "you", now) }));
+  await page.goto("/race/tied-room");
+  await expect(page.locator(".race-finish-title h1")).toHaveText("you tied for 2nd");
+  await expect(page.locator(".race-place-badge")).toHaveText("2nd");
+  await expect(page.locator(".race-standings tbody tr td:first-child")).toHaveText(["1", "2", "2", "4"]);
+  await expect(page.locator(".race-position")).toHaveText(["1", "2", "2", "4"]);
+  await expect(page.locator(".race-finish-title p")).toContainText("quote unfinished");
+});

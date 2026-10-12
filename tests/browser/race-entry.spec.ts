@@ -8,6 +8,7 @@ test("homepage quote supports typing and correction without joining; button ente
   await route.fulfill({status:503,contentType:"application/json",body:JSON.stringify({error:"Test connection unavailable"})});
  });
  await page.goto("/");
+ await page.getByRole("button",{name:"quotes",exact:true}).click();
  const input=page.getByRole("textbox",{name:"Type the quote",exact:true});
  await expect(input).toBeFocused();
  await expect(page.getByRole("region",{name:"Quote attribution"})).toHaveCount(0);
@@ -52,6 +53,7 @@ test("mobile can enter directly without completing the quote",async({page})=>{
   calls++;await route.fulfill({status:503,contentType:"application/json",body:JSON.stringify({error:"Test connection unavailable"})});
  });
  await page.setViewportSize({width:390,height:844});await page.goto("/");
+ await page.getByRole("button",{name:"quotes",exact:true}).click();
  await expect(page.getByRole("textbox",{name:"Type the quote",exact:true})).toBeVisible();
  await page.getByRole("button",{name:"Enter a race",exact:true}).click();
  await expect(page.locator(".race-launch-status [role=alert]")).toBeVisible();expect(calls).toBe(1);
@@ -60,6 +62,7 @@ test("mobile can enter directly without completing the quote",async({page})=>{
 
 test("unfocused quote blurs behind a sharp focus prompt and restores on click",async({page})=>{
  await page.goto("/");
+ await page.getByRole("button",{name:"quotes",exact:true}).click();
  const input=page.getByRole("textbox",{name:"Type the quote",exact:true});
  await expect(input).toBeFocused();
  await input.evaluate(el=>(el as HTMLTextAreaElement).blur());
@@ -81,6 +84,7 @@ for(const platform of ["MacIntel","Win32"]) {
    calls++;await route.fulfill({status:503,contentType:"application/json",body:JSON.stringify({error:"Test connection unavailable"})});
   });
   await page.goto("/");
+ await page.getByRole("button",{name:"quotes",exact:true}).click();
   const button=page.getByRole("button",{name:"Enter a race",exact:true});
   await expect(button).toHaveAttribute("aria-keyshortcuts",platform==="MacIntel"?"Meta+Enter":"Control+Enter");
   await expect(button.locator("kbd")).toHaveText([platform==="MacIntel"?"⌘":"Ctrl","Enter"]);
@@ -112,16 +116,16 @@ for(const platform of ["MacIntel","Win32"]) {
 
 test("logo resets completed and in-progress homepage warmups and returns from practice", async ({ page }) => {
   await page.goto("/");
-  const input = page.getByRole("textbox", { name: "Type the quote", exact: true });
+  const input = page.getByRole("textbox", { name: "Type the words", exact: true });
   const quote = (await page.locator(".word").allTextContents()).map(w => w.replaceAll("\u200b", "")).join(" ");
   await input.pressSequentially(quote, { delay: 1 });
-  await expect(page.getByRole("region", { name: "Quote results" })).toBeVisible();
+  await expect(page.getByRole("region", { name: "Words results" })).toBeVisible();
   const logo = page.getByRole("link", { name: "Monkeytype Racer home" });
   await logo.click();
   await expect(input).toBeVisible();
   await expect(input).toHaveValue("");
   await expect(input).toBeFocused();
-  await expect(page.getByRole("region", { name: "Quote results" })).toHaveCount(0);
+  await expect(page.getByRole("region", { name: "Words results" })).toHaveCount(0);
   await input.pressSequentially("~");
   await logo.click();
   await expect(input).toHaveValue("");
@@ -130,4 +134,30 @@ test("logo resets completed and in-progress homepage warmups and returns from pr
   await expect(page).toHaveURL(/\/$/);
   await expect(input).toBeVisible();
   await expect(input).toHaveValue("");
+});
+
+
+test("words are the default and switching warmup modes resets typing", async ({page}) => {
+  const calls: unknown[] = [];
+  await page.route("**/api/race", async route => {
+    calls.push(route.request().postDataJSON());
+    await route.fulfill({status:503, body:"{}"});
+  });
+  await page.goto("/");
+  await expect(page.getByRole("button", {name:"words", exact:true})).toHaveAttribute("aria-pressed", "true");
+  const words = page.getByRole("textbox", {name:"Type the words", exact:true});
+  const text = (await page.locator(".word").allTextContents()).map(w => w.replaceAll("\u200b", "")).join(" ");
+  expect(text.split(" ")).toHaveLength(25);
+  expect(text).toMatch(/^[a-z ]+$/);
+  await words.pressSequentially(text, {delay:1});
+  await expect(page.getByRole("region", {name:"Words results"})).toBeVisible();
+  await expect(page.getByRole("region", {name:"Quote attribution"})).toHaveCount(0);
+  await page.getByRole("button", {name:"more words", exact:true}).click();
+  await expect(words).toHaveValue("");
+  await words.pressSequentially("wrong");
+  await page.getByRole("button", {name:"quotes", exact:true}).click();
+  await expect(page.getByRole("textbox", {name:"Type the quote", exact:true})).toHaveValue("");
+  await page.getByRole("button", {name:"words", exact:true}).click();
+  await expect(words).toHaveValue("");
+  expect(calls).toHaveLength(0);
 });

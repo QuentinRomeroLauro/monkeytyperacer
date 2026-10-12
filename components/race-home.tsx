@@ -9,34 +9,44 @@ import { RaceTyping } from "./race-typing";
 import { UserPlus, Keyboard } from "./icons";
 import { useRaceEntry } from "./use-race-entry";
 import { RaceEnterButton } from "./race-enter-button";
-export function RaceHome({ warmups }: { warmups: { text: string; source: string; author?: string }[] }) {
+export function RaceHome({ warmups, wordWarmups }: { wordWarmups: string[]; warmups: { text: string; source: string; author?: string }[] }) {
   const entry = useRaceEntry();
   const { busy, error, enter } = entry;
   const [quoteIndex, setQuoteIndex] = useState(0), [result, setResult] = useState<WarmupResult | null>(null);
+  const [mode, setMode] = useState<"words" | "quotes">("words");
   const quote = warmups[quoteIndex % warmups.length];
+  const warmupText = mode === "words" ? wordWarmups[quoteIndex % wordWarmups.length] : quote.text;
   const warmup = useRef(newWarmup());
   const onWarmupEdit = useCallback((type: RaceEdit["type"], text?: string, finished?: boolean) => {
     const now = performance.now();
-    if (warmup.current.startedAt === null && type === "insert") track("warmup_started", { quote_length: quote.text.length });
-    warmup.current = recordWarmup(warmup.current, quote.text, type, text, now);
+    if (warmup.current.startedAt === null && type === "insert") track("warmup_started", { quote_length: warmupText.length, mode });
+    warmup.current = recordWarmup(warmup.current, warmupText, type, text, now);
     if (finished) { const result = finishWarmup(warmup.current, now); track("warmup_completed", { wpm: Math.round(result.wpm), accuracy: Math.round(result.accuracy), duration_seconds: result.duration }); setResult(result); }
-  }, [quote]);
+  }, [warmupText, mode]);
   return (
     <div className="race-home minimal-race-home">
       <div className={`race-launch ${result ? "race-launch-finished" : ""}`}>
-        {result && (
+        {result && mode === "quotes" && (
           <section className="warmup-quote-source" aria-label="Quote attribution">
             <span className="warmup-quote-label">quote from</span>
             <cite>{quote.source}</cite>
             {quote.author && <p>by {quote.author}</p>}
           </section>
         )}
-        {result ? <WarmupResults result={result}/> : <RaceTyping key={quoteIndex} quote={quote.text} initial="" enabled={!busy} warmup onEdit={onWarmupEdit}/>}
+        {result ? <WarmupResults result={result} label={mode === "words" ? "Words results" : "Quote results"}/> : <RaceTyping key={`${mode}-${quoteIndex}`} quote={warmupText} warmupMode={mode} initial="" enabled={!busy} warmup onEdit={onWarmupEdit}/>}
         <div className="race-launch-primary">
           <RaceEnterButton entry={entry} />
-          {result && <button className="warmup-repeat" onClick={() => { setQuoteIndex(i => i + 1); setResult(null); warmup.current = newWarmup(); }}>another quote</button>}
+          {result && <button className="warmup-repeat" onClick={() => { setQuoteIndex(i => i + 1); setResult(null); warmup.current = newWarmup(); }}>{mode === "words" ? "more words" : "another quote"}</button>}
         </div>
         <div className="race-launch-options">
+          <div className="warmup-mode-toggle" role="group" aria-label="Warmup mode">
+            {(["words", "quotes"] as const).map(option => (
+              <button key={option} aria-pressed={mode === option} disabled={!!busy} onClick={() => {
+                if (mode === option) return;
+                setMode(option); setResult(null); warmup.current = newWarmup();
+              }}>{option}</button>
+            ))}
+          </div>
           <button disabled={!!busy} onClick={() => enter("create")}><UserPlus size={16}/> race a friend</button>
           <Link href="/practice"><Keyboard size={16}/> practice</Link>
         </div>

@@ -149,7 +149,13 @@ export function RaceRoom({ id }: { id: string }) {
         </div>
       )}
       {!room.me ? (
-        <div className="race-join-panel">
+        <form className="race-join-panel" onSubmit={(event) => {
+          event.preventDefault();
+          if (busy || (room.phase !== "waiting" && room.phase !== "countdown")) return;
+          const chosen = racerName(name || user?.name);
+          setName(chosen);
+          void command({ action: "join", name: chosen });
+        }}>
           <h1>
             {room.kind === "private"
               ? "you’re invited to race"
@@ -173,11 +179,7 @@ export function RaceRoom({ id }: { id: string }) {
             disabled={
               busy || (room.phase !== "waiting" && room.phase !== "countdown")
             }
-            onClick={() => {
-              const chosen = racerName(name || user?.name);
-              setName(chosen);
-              void command({ action: "join", name: chosen });
-            }}
+            type="submit"
           >
             join room <ArrowRight size={18} />
           </button>
@@ -188,7 +190,7 @@ export function RaceRoom({ id }: { id: string }) {
                 : "A race is in progress. You can join the next round."}
             </p>
           )}
-        </div>
+        </form>
       ) : (
         <>
           {room.phase === "waiting" && (

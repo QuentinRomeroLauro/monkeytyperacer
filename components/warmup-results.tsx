@@ -1,7 +1,7 @@
 import { Chart } from "./chart";
 import type { WarmupResult } from "@/lib/warmup";
-export function WarmupResults({result}:{result:WarmupResult}) {
-  return <section className="warmup-results" aria-label="Quote results" aria-live="polite">
+export function WarmupResults({result, label = "Quote results"}:{result:WarmupResult; label?: string}) {
+  return <section className="warmup-results" aria-label={label} aria-live="polite">
     <div className="warmup-results-body">
     <div className="warmup-stats">
       <div><span>wpm</span><strong data-stat="wpm">{Math.round(result.wpm)}</strong></div>

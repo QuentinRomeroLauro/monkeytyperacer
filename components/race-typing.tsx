@@ -22,10 +22,12 @@ export const RaceTyping = memo(function RaceTyping({
   enabled,
   onEdit,
   warmup = false,
+  warmupMode = "quotes",
   finished = false,
   replayId,
 }: {
   warmup?: boolean;
+  warmupMode?: "words" | "quotes";
   finished?: boolean;
   replayId?: string;
   quote: string;
@@ -163,7 +165,7 @@ export const RaceTyping = memo(function RaceTyping({
           ref={input}
           hidden={finished}
           className="typing-input"
-          aria-label={warmup ? "Type the quote" : "Type the race quote"}
+          aria-label={warmup ? (warmupMode === "words" ? "Type the words" : "Type the quote") : "Type the race quote"}
           value={draft}
           disabled={!enabled || done}
           autoCapitalize="off"
@@ -242,7 +244,7 @@ export const RaceTyping = memo(function RaceTyping({
         </div>
       ) : <div className="race-typing-hint" aria-live="polite">
         {finished ? "" : done
-          ? (warmup ? "quote complete" : "")
+          ? (warmup ? (warmupMode === "words" ? "words complete" : "quote complete") : "")
           : correctPrefix(typed, quote) < length
             ? "backspace to fix this word before moving on"
             : enabled

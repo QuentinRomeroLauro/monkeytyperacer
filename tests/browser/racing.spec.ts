@@ -29,9 +29,7 @@ test("friend race: invite, ready, shared quote, corrections, standings and remat
     await friend
       .getByLabel("your racer name", { exact: true })
       .fill("Friend Racer");
-    await friend
-      .getByRole("button", { name: "join room", exact: true })
-      .click();
+    await friend.getByLabel("your racer name", { exact: true }).press("Enter");
     await expect(
       friend.getByRole("region", { name: "Race lobby" }),
     ).toBeVisible();

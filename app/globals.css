@@ -1778,9 +1778,13 @@ button:disabled { cursor:not-allowed; }
 .race-name-entry input { width:100%; min-width:0; padding:12px 4px; border:0; outline:none; background:transparent; color:var(--text-color); font-size:14px; }
 .race-name-entry input::placeholder { color:var(--sub-color); }
 .race-name-entry button { display:flex; align-items:center; padding:12px; color:var(--main-color); }
-.race-launch-options { display:flex; align-items:center; justify-content:center; gap:28px; margin-top:32px; font-size:13px; }
+.race-launch-options { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:28px; margin-top:32px; font-size:13px; }
 .race-launch-options button,.race-launch-options a { display:inline-flex; align-items:center; gap:8px; color:var(--sub-color); }
 .race-launch-options button:hover,.race-launch-options a:hover { color:var(--text-color); }
+.warmup-mode-toggle { display:inline-flex; gap:2px; padding:3px; border-radius:6px; background:var(--sub-alt-color); }
+.warmup-mode-toggle button { padding:4px 8px; border-radius:4px; font-size:12px; }
+.warmup-mode-toggle button[aria-pressed="true"] { color:var(--main-color); background:var(--bg-color); }
+@media(max-width:480px) { .race-launch-options { gap:12px; font-size:12px; } .warmup-mode-toggle button { padding:4px 6px; font-size:11px; } }
 .race-launch-status { min-height:28px; margin-top:18px; text-align:center; }
 @media(max-width:700px) { .race-launch { padding:50px 0 65px; } .race-launch-input { font-size:clamp(21px,6vw,28px); } }
 .race-launch-status .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }

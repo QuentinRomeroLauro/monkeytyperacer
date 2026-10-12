@@ -81,7 +81,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
             )}
             <div className="footer-links">
               <div>
-                <Link href="/about#support"><Mail />contact</Link>
+                <a href="mailto:quentinromero@outlook.com"><Mail />support</a>
                 <Link href="/about"><Info />about & credits</Link>
                 <a href="https://discord.gg/KJ75VN2pM" target="_blank" rel="noreferrer"><MessageCircle />discord</a>
                 <Link href="/guides">guides</Link>

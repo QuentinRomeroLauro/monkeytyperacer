@@ -17,6 +17,7 @@ export default function AboutPage() {
         <h2>credits & licenses</h2>
         <p>Monkeytype’s contributions are credited under GPL-3.0, and third-party asset licenses are retained. Interface icons come from <a href="https://hugeicons.com" target="_blank" rel="noreferrer">Hugeicons</a>.</p>
         <h2 id="support">say hello</h2>
+        <p>For support, bug reports, or feedback, email me at <a href="mailto:quentinromero@outlook.com">quentinromero@outlook.com</a>.</p>
         <p>Found a bug, have an idea, or want someone to race? Join the <a href="https://discord.gg/KJ75VN2pM" target="_blank" rel="noreferrer">Monkeytype Racer Discord</a>.</p>
       </div>
     </div>

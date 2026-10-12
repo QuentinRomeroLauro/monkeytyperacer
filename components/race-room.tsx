@@ -277,7 +277,7 @@ export function RaceRoom({ id }: { id: string }) {
               </div>
               <div className="race-quote-stage">
                   <div className="race-status" aria-live="polite">
-                    {finished ? <span>finished</span> : <>
+                    {finished ? <cite className="race-quote-title">{room.source}</cite> : <>
                     {!underway ? (
                       <>
                         <span className="race-countdown">{count}</span> get
@@ -306,7 +306,7 @@ export function RaceRoom({ id }: { id: string }) {
                     replayId={`${room.id}:${room.round}`}
                     onEdit={edit}
                   />
-                  <div className="quote-source">{room.source}</div>
+                  {!finished && <div className="quote-source">{room.source}</div>}
               </div>
               {finished && (
                 <div className="race-results" aria-label="Race results">

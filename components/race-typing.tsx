@@ -1,5 +1,5 @@
 "use client";
-import { memo, useEffect, useRef, useState } from "react";
+import { memo, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useApp } from "./context";
 import { useTypingCaret } from "./use-typing-caret";
 import { RotateCw } from "./icons";
@@ -39,6 +39,7 @@ export const RaceTyping = memo(function RaceTyping({
   const latest = useRef(initial),
     input = useRef<HTMLTextAreaElement>(null),
     container = useRef<HTMLDivElement>(null),
+    viewport = useRef<HTMLDivElement>(null),
     word = useRef<HTMLSpanElement>(null);
   const recording = useRef<{ at: number; text: string }[]>([{ at: 0, text: initial }]);
   const recordingStart = useRef<number | null>(null);
@@ -94,10 +95,25 @@ export const RaceTyping = memo(function RaceTyping({
     wordIndex: activeIndex,
     ready: true,
     smooth: config.smoothCaret,
-    showAllLines: false,
+    showAllLines: finished,
     fontFamily: config.fontFamily,
     fontSize: config.fontSize,
   });
+  useLayoutEffect(() => {
+    if (!finished || !viewport.current) return;
+    if (replayAt === null) {
+      viewport.current.scrollTop = 0;
+      return;
+    }
+    const active = word.current;
+    if (!active) return;
+    const top = active.offsetTop;
+    const bottom = top + active.offsetHeight;
+    const view = viewport.current;
+    if (top < view.scrollTop || bottom > view.scrollTop + view.clientHeight) {
+      view.scrollTop = Math.max(0, top - active.offsetHeight);
+    }
+  }, [finished, replayAt, activeIndex]);
   useEffect(() => {
     if (enabled && !modal && (!warmup || window.matchMedia("(pointer: fine)").matches)) input.current?.focus({ preventScroll: true });
   }, [enabled, modal, warmup]);
@@ -124,12 +140,27 @@ export const RaceTyping = memo(function RaceTyping({
   return (
     <div className={`race-type-area ${enabled || finished || done ? "" : "race-type-inactive"}`}>
       <div
-        className={`words-viewport ${needsFocus ? "unfocused" : ""}`}
+        ref={viewport}
+        className={`words-viewport ${finished ? "race-quote-scroll" : ""} ${needsFocus ? "unfocused" : ""}`}
+        role={finished ? "region" : undefined}
+        aria-label={finished ? "Finished quote" : undefined}
+        tabIndex={finished ? 0 : undefined}
+        onWheel={() => { if (finished) setPlaying(false); }}
+        onTouchStart={() => { if (finished) setPlaying(false); }}
+        onKeyDown={event => {
+          if (!finished) return;
+          setPlaying(false);
+          if (event.key === "Home" || event.key === "End") {
+            event.preventDefault();
+            event.currentTarget.scrollTop = event.key === "Home" ? 0 : event.currentTarget.scrollHeight;
+          }
+        }}
         style={{ height: config.fontSize * 4.875 }}
-        onClick={() => input.current?.focus()}
+        onClick={() => { if (!finished) input.current?.focus(); }}
       >
         <textarea
           ref={input}
+          hidden={finished}
           className="typing-input"
           aria-label={warmup ? "Type the quote" : "Type the race quote"}
           value={draft}
@@ -196,7 +227,7 @@ export const RaceTyping = memo(function RaceTyping({
         {needsFocus && (
           <button
             className="focus-warning"
-            onClick={() => input.current?.focus()}
+            onClick={() => { if (!finished) input.current?.focus(); }}
           >
             click here to focus
           </button>

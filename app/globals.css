@@ -1961,3 +1961,6 @@ button:disabled { cursor:not-allowed; }
 .race-replay-controls button { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
 .race-replay-controls input { width:180px; max-width:38vw; accent-color:var(--main-color); }
 .race-replay-controls span { min-width:42px; font-variant-numeric:tabular-nums; }
+.race-quote-title { color:var(--main-color); font-style:normal; line-height:1.5; }
+.words-viewport.race-quote-scroll { overflow-y:auto; overscroll-behavior-y:contain; scrollbar-width:thin; scrollbar-color:var(--sub-color) transparent; }
+.race-quote-scroll .words-container { transition:none; }

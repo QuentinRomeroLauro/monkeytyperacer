@@ -51,3 +51,26 @@ test("unfinished racers display tied places in results and tracks", async ({ pag
   await expect(page.locator(".race-position")).toHaveText(["1", "2", "2", "4"]);
   await expect(page.locator(".race-finish-title p")).toContainText("quote unfinished");
 });
+
+test("finished quote moves attribution above the text and scrolls on desktop and mobile", async ({ page }) => {
+  const now = Date.now();
+  const quote = "The quiet reader turned the page and found another story waiting to be told. ".repeat(5).trim();
+  const player: Racer = { id: "you", session: "you", name: "Reader", ready: true, joinedAt: now - 40000, seenAt: now, typed: quote, samples: [], seq: 0, attempts: quote.length, errors: 0, finishedAt: now - 1000, left: false };
+  const state: RaceState = { id: "scroll-room", kind: "public", phase: "finished", host: "you", round: 1, quote, source: "A Book — An Author", createdAt: now - 40000, startAt: now - 30000, deadline: now, players: [player] };
+  await page.route("**/api/race", route => route.fulfill({ json: raceView(state, "you", now) }));
+  for (const width of [1280, 390]) {
+    await page.setViewportSize({ width, height: 844 });
+    await page.goto("/race/scroll-room");
+    const text = page.getByRole("region", { name: "Finished quote", exact: true });
+    await expect(text).toBeVisible();
+    await expect(page.locator(".race-status")).toHaveText("A Book — An Author");
+    await expect(page.locator(".race-quote-stage .quote-source")).toHaveCount(0);
+    expect((await page.locator(".race-status").boundingBox())!.y).toBeLessThan((await text.boundingBox())!.y);
+    await text.hover();
+    await page.mouse.wheel(0, 450);
+    await expect.poll(() => text.evaluate(el => el.scrollTop)).toBeGreaterThan(0);
+    await text.focus();
+    await text.press("Control+Home");
+    await expect.poll(() => text.evaluate(el => el.scrollTop)).toBe(0);
+  }
+});

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { useApp } from "./context";
 import { useStored } from "@/lib/store";
 import { useRaceRoom } from "./use-race-room";
@@ -20,6 +20,7 @@ import {
   RotateCw,
   UserPlus,
 } from "./icons";
+import { Logo } from "./brand-logo";
 import { Chart } from "./chart";
 import { RaceShareActions } from "./race-share";
 export function RaceRoom({ id }: { id: string }) {
@@ -101,6 +102,9 @@ export function RaceRoom({ id }: { id: string }) {
   const host = room.host === me?.id;
   const count = Math.max(0, Math.ceil(((room.startAt ?? now) - now) / 1000));
   const ranking = raceStandings(room.players);
+  const laneColors = ["#e9b65f", "#c18ce0", "#79c99e", "#ed8f9a", "#d78f68", "#a5b86c", "#c3a6db"];
+  const opponents = room.players.filter(p => p.id !== room.me?.id);
+  const lanes = room.players.map(player => ranking.find(p => p.id === player.id)!);
   const myStanding = ranking.find(p => p.id === me?.id);
   const place = myStanding?.place ?? 0;
   const ordinal = `${place}${place === 1 ? "st" : place === 2 ? "nd" : place === 3 ? "rd" : "th"}`;
@@ -246,13 +250,14 @@ export function RaceRoom({ id }: { id: string }) {
           {room.phase !== "waiting" && (
             <>
               <div className="race-progress-list" aria-label="Race progress">
-                {ranking.map((p) => (
+                {lanes.map((p) => (
                   <div
                     className={`race-progress ${p.id === room.me?.id ? "is-you" : ""} ${p.finishedAt ? "has-finished" : ""}`}
                     key={p.id}
+                    data-racer-id={p.id}
+                    style={{ "--racer-color": p.id === room.me?.id ? "var(--main-color)" : laneColors[opponents.findIndex(player => player.id === p.id) % laneColors.length] } as CSSProperties}
                   >
                     <div>
-                      <span className="race-position">{p.place}</span>
                       <span>
                         {p.name}
                         {p.id === room.me?.id ? " (You)" : ""}
@@ -268,9 +273,14 @@ export function RaceRoom({ id }: { id: string }) {
                                 ? "unfinished"
                                 : ""}
                       </small>
+                      <span className="race-position" aria-label={`Place ${p.place}${p.tied ? ", tied" : ""}`}>{p.place}</span>
                     </div>
-                    <div className="race-track">
-                      <span style={{ width: `${p.progress * 100}%` }} />
+                    <div className="race-track" role="progressbar" aria-label={`${p.name} race progress`} aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(p.progress * 100)}>
+                      <div className="race-car-path">
+                        <div className="race-car" style={{ left: `${Math.max(0, Math.min(1, p.progress || 0)) * 100}%` }}>
+                          <Logo width={52} height={34} viewBox="0 20 88 56" />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 ))}

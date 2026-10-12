@@ -74,3 +74,30 @@ test("finished quote moves attribution above the text and scrolls on desktop and
     await expect.poll(() => text.evaluate(el => el.scrollTop)).toBe(0);
   }
 });
+
+test("cars move within stable lanes, with a blue local car and places on the right", async ({ page }) => {
+  const now = Date.now();
+  const racer = (id: string, typed: string): Racer => ({ id, session: id, name: id, ready: true, joinedAt: now, seenAt: now, typed, samples: [], seq: 0, attempts: typed.length, errors: 0, finishedAt: null, left: false });
+  const state: RaceState = { id: "car-room", kind: "public", phase: "racing", host: "you", round: 1, quote: "A short quote.", source: "Test", createdAt: now - 40000, startAt: now - 1000, deadline: now + 180000, players: [racer("you", "A"), racer("other", "A short")] };
+  await page.route("**/api/race", route => route.fulfill({ json: raceView(state, "you", Date.now()) }));
+  await page.goto("/race/car-room");
+  const mine = page.locator('[data-racer-id="you"]');
+  const other = page.locator('[data-racer-id="other"]');
+  await expect(mine.locator(".race-position")).toHaveText("2");
+  const initial = (await mine.locator(".race-car").boundingBox())!;
+  const laneY = (await mine.boundingBox())!.y;
+  const ownColor = await mine.locator(".race-car").evaluate(el => getComputedStyle(el).color);
+  expect(ownColor).toBe(await mine.locator(".race-position").evaluate(el => getComputedStyle(el).color));
+  expect(ownColor).not.toBe(await other.locator(".race-car").evaluate(el => getComputedStyle(el).color));
+  state.players[0].typed = "A short quote";
+  await expect(mine.locator(".race-position")).toHaveText("1");
+  await expect.poll(async () => (await mine.locator(".race-car").boundingBox())!.x).toBeGreaterThan(initial.x + 100);
+  expect((await mine.boundingBox())!.y).toBe(laneY);
+  const position = (await mine.locator(".race-position").boundingBox())!;
+  const car = (await mine.locator(".race-car").boundingBox())!;
+  expect(position.x).toBeGreaterThan(car.x + car.width);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.screenshot({ path: "/tmp/race-cars-mobile.png", fullPage: true });
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.screenshot({ path: "/tmp/race-cars-desktop.png", fullPage: true });
+});

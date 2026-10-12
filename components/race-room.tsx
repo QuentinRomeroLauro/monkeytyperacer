@@ -16,6 +16,7 @@ import {
   Copy,
   Crown,
   Globe,
+  Keyboard,
   LogOut,
   RotateCw,
   UserPlus,
@@ -320,7 +321,13 @@ export function RaceRoom({ id }: { id: string }) {
               </div>
               {finished && (
                 <div className="race-results" aria-label="Race results">
-                  <div className="race-launch-primary race-next-action"><RaceEnterButton entry={nextEntry} label="Next race" /></div>
+                  <div className="race-next-action">
+                    <div className="race-launch-primary"><RaceEnterButton entry={nextEntry} label="Next race" /></div>
+                    <div className="race-launch-options">
+                      <button disabled={!!nextEntry.busy || busy} onClick={() => nextEntry.enter("create")}><UserPlus size={16}/> race a friend</button>
+                      <Link href="/practice"><Keyboard size={16}/> practice</Link>
+                    </div>
+                  </div>
                   <div className={`race-finish-heading ${me?.finishedAt ? "is-complete" : ""}`}>
                     <div className="race-finish-title">
                       <div className="race-place-badge" aria-hidden="true">

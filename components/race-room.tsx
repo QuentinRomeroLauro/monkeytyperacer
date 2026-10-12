@@ -1,4 +1,5 @@
 "use client";
+import { track, trackOnce } from "@/lib/analytics";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
@@ -49,6 +50,14 @@ export function RaceRoom({ id }: { id: string }) {
     room.phase !== "waiting" &&
     room.phase !== "finished";
   const finished = !!me?.finishedAt || room?.phase === "finished";
+  useEffect(() => {
+    if (!room?.me) return;
+    const key = `${room.id}:${room.round}:${room.me.id}`;
+    const properties = { race_kind: room.kind, racers: room.players.length, round: room.round };
+    trackOnce("race_lobby_entered", key, properties);
+    if (underway && !finished) trackOnce("race_started", key, { ...properties, wait_seconds: Math.max(0, ((room.startAt ?? now) - (me?.joinedAt ?? now)) / 1000) });
+    if (finished) trackOnce("race_completed", key, { ...properties, completed_quote: !!me?.finishedAt, wpm: Math.round(me?.wpm ?? 0), accuracy: Math.round(me?.accuracy ?? 0), progress: me?.progress ?? 0 });
+  }, [room, me, underway, finished, now]);
   const nextEntry = useRaceEntry({ enabled: finished && !busy, nameOverride: me?.name });
   const finishHeading = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
@@ -72,6 +81,7 @@ export function RaceRoom({ id }: { id: string }) {
   async function invite() {
     try {
       await navigator.clipboard.writeText(`${location.origin}/race/${id}`);
+      track("invite_link_copied", { race_kind: room?.kind ?? "unknown" });
       setInviteCopied(true);
       setLocalError("");
       if (copyTimer.current) clearTimeout(copyTimer.current);

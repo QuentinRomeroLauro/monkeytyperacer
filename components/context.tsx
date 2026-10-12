@@ -1,4 +1,5 @@
 "use client";
+import { identifyAnalytics, track } from "@/lib/analytics";
 import {
   createContext,
   useContext,
@@ -74,6 +75,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     api<{ user: (User & { settings?: Partial<Config> }) | null }>("auth/me")
       .then(({ user }) => {
         if (cancelled) return;
+        identifyAnalytics(user?.id ?? null);
         setUser(user);
         if (user?.settings && Object.keys(user.settings).length)
           storeConfig((old) => ({ ...old, ...migrateConfig(user.settings!), mode: old.mode }));
@@ -175,7 +177,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
           : [result, ...old].slice(0, 1000),
       );
       if (user)
-        api("results", "POST", result).catch((error) =>
+        api("results", "POST", result).then(() => track("practice_result_saved")).catch((error) =>
           notify(`Saved on this device. ${error.message}`, true),
         );
     },

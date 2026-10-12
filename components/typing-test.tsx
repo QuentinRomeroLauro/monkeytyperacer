@@ -1,4 +1,5 @@
 "use client";
+import { track, trackOnce } from "@/lib/analytics";
 import {
   useState,
   useEffect,
@@ -319,6 +320,7 @@ function TestSession({
       session?.startedAt !== undefined &&
       session?.endedAt === null;
     setActive(active);
+    if (active && session) trackOnce("practice_started", String(session.startedAt), { mode: configRef.current.mode, language: configRef.current.language });
     if (
       session?.endedAt !== null &&
       session?.endedAt !== undefined &&
@@ -326,6 +328,7 @@ function TestSession({
     ) {
       completed.current = true;
       const result = resultFrom(session, configRef.current);
+      track("practice_completed", { mode: result.mode, language: result.language, wpm: Math.round(result.wpm), accuracy: Math.round(result.accuracy), duration_seconds: result.duration, failed: result.failed });
       saveResult(result);
       onComplete(result, session.words);
     }

@@ -1,4 +1,5 @@
 "use client";
+import { track } from "@/lib/analytics";
 import { useState } from "react";
 import {
   ArrowRight,
@@ -58,6 +59,7 @@ export function Results({
         await navigator.clipboard.writeText(text);
         setShareMessage("copied — ready to share");
       }
+      track("practice_result_shared", { method: typeof navigator.share === "function" ? "native" : "copy" });
     } catch (error) {
       if (!(error instanceof Error && error.name === "AbortError"))
         setShareMessage("Couldn’t share. Please try again.");

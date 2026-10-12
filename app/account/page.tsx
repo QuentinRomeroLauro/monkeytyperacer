@@ -1,4 +1,5 @@
 "use client";
+import { identifyAnalytics, track } from "@/lib/analytics";
 import { useState } from "react";
 import Link from "next/link";
 import { LogOut, Download, UserRound } from "@/components/icons";
@@ -66,6 +67,8 @@ export default function AccountPage() {
             onClick={async () => {
               try {
                 await api("auth/logout", "POST");
+                track("account_signed_out");
+                identifyAnalytics(null);
                 setUser(null);
                 notify("Signed out.");
               } catch {
@@ -194,6 +197,8 @@ export default function AccountPage() {
                 e.preventDefault();
                 try {
                   await api("account", "DELETE", { password });
+                  track("account_deleted");
+                  identifyAnalytics(null);
                   setUser(null);
                   setDeleteForm(false);
                   notify("Your account and cloud results were deleted.");

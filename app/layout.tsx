@@ -2,6 +2,7 @@ import { siteUrl } from "@/lib/seo";
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppProvider } from "@/components/context";
+import { Analytics } from "@/components/analytics";
 import { Shell } from "@/components/shell";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -29,6 +30,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <AppProvider>
+          <Analytics />
           <Shell>{children}</Shell>
         </AppProvider>
       </body>

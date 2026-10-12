@@ -1,12 +1,13 @@
 import { pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { AnalyticsPreference } from "@/components/analytics";
 const pages: Record<string, { title: string; paragraphs: string[] }> = {
   privacy: {
     title: "privacy policy",
     paragraphs: [
       "Typing preferences and recent results are stored in your browser. If you create an account, your email address, username, password hash, preferences, and typing results are stored in Neon Postgres. Passwords are hashed; the original password is never stored.",
-      "An HTTP-only session cookie keeps you signed in. A separate HTTP-only racer cookie identifies your guest seat for up to 30 days. Racer names, typed quote text, keystroke counts, timing, and race standings are stored in Neon; names and race progress are visible to people with access to the room. Rooms can be rejoined for 24 hours. We do not include advertising or analytics trackers. Vercel processes requests to host the application.",
+      "An HTTP-only session cookie keeps you signed in. A separate HTTP-only racer cookie identifies your guest seat for up to 30 days. Racer names, typed quote text, keystroke counts, timing, and race standings are stored in Neon; names and race progress are visible to people with access to the room. Rooms can be rejoined for 24 hours. We use PostHog for product analytics: page categories, race and practice milestones, aggregate performance, feature usage, and anonymous browser identifiers. Signed-in activity is associated with an internal account ID. We do not send names, email addresses, passwords, typed text, or private room URLs to PostHog. PostHog session recording is disabled. Analytics can be disabled below and respects Do Not Track. We do not include advertising trackers. Vercel processes requests to host the application.",
       "Your username and eligible test scores appear on this project’s leaderboard. You can export your result history from the account page and delete your account and cloud results there. Local browser data can be removed through your browser’s site settings.",
       "This is an independent project, separate from monkeytype.com. External links lead to websites with their own privacy policies.",
     ],
@@ -52,6 +53,7 @@ export default async function InfoPage({
       {page.paragraphs.map((p, i) => (
         <p key={i}>{p}</p>
       ))}
+      {info === "privacy" && <AnalyticsPreference />}
       {info === "terms" && <p><Link href="/licenses">Source code, licenses, and notices</Link></p>}
     </div>
   );

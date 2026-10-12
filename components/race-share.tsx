@@ -1,4 +1,5 @@
 "use client";
+import { track } from "@/lib/analytics";
 import { useRef, useState } from "react";
 import { Logo } from "./shell";
 import { Copy, Download, Upload, X } from "./icons";
@@ -36,6 +37,7 @@ export function RaceShareActions({ result }: { result: RaceShare }) {
         setTimeout(() => URL.revokeObjectURL(url), 10000);
         setMessage("Card downloaded.");
       }
+      track("race_result_shared", { method: action });
     } catch (e) {
       if (!(e instanceof Error && e.name === "AbortError"))
         setMessage(
@@ -52,6 +54,7 @@ export function RaceShareActions({ result }: { result: RaceShare }) {
       <button
         onClick={() => {
           setMessage("");
+          track("race_share_opened");
           dialog.current?.showModal();
         }}
       >

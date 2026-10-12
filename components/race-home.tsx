@@ -1,4 +1,5 @@
 "use client";
+import { track } from "@/lib/analytics";
 import Link from "next/link";
 import { useCallback, useRef, useState } from "react";
 import { WarmupResults } from "./warmup-results";
@@ -16,8 +17,9 @@ export function RaceHome({ warmups }: { warmups: { text: string; source: string;
   const warmup = useRef(newWarmup());
   const onWarmupEdit = useCallback((type: RaceEdit["type"], text?: string, finished?: boolean) => {
     const now = performance.now();
+    if (warmup.current.startedAt === null && type === "insert") track("warmup_started", { quote_length: quote.text.length });
     warmup.current = recordWarmup(warmup.current, quote.text, type, text, now);
-    if (finished) setResult(finishWarmup(warmup.current, now));
+    if (finished) { const result = finishWarmup(warmup.current, now); track("warmup_completed", { wpm: Math.round(result.wpm), accuracy: Math.round(result.accuracy), duration_seconds: result.duration }); setResult(result); }
   }, [quote]);
   return (
     <div className="race-home minimal-race-home">

@@ -1,4 +1,5 @@
 "use client";
+import { track } from "@/lib/analytics";
 import { memo, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useApp } from "./context";
 import { useTypingCaret } from "./use-typing-caret";
@@ -235,7 +236,7 @@ export const RaceTyping = memo(function RaceTyping({
       </div>
       {finished && recording.current.length > 1 ? (
         <div className="race-replay-controls" aria-label="Your typing replay">
-          <button onClick={() => { if (playing) setPlaying(false); else { if (replayAt === null || replayAt >= replayDuration) { replayPosition.current = 0; setReplayAt(0); } setPlaying(true); } }}><RotateCw size={16}/>{playing ? "pause replay" : "replay"}</button>
+          <button onClick={() => { if (playing) setPlaying(false); else { track("race_replay_played"); if (replayAt === null || replayAt >= replayDuration) { replayPosition.current = 0; setReplayAt(0); } setPlaying(true); } }}><RotateCw size={16}/>{playing ? "pause replay" : "replay"}</button>
           <input aria-label="Replay position" type="range" min={0} max={replayDuration} step={1} value={replayAt ?? replayDuration} onChange={event => { setPlaying(false); replayPosition.current = Number(event.target.value); setReplayAt(replayPosition.current); }}/>
           <span>{((replayAt ?? replayDuration) / 1000).toFixed(1)}s</span>
         </div>

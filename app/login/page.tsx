@@ -1,4 +1,5 @@
 "use client";
+import { identifyAnalytics, track } from "@/lib/analytics";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { LogIn, UserPlus } from "@/components/icons";
@@ -38,10 +39,13 @@ function AuthForm({ register = false }: { register?: boolean }) {
               ...(register ? { name: data.get("name") } : {}),
             },
           );
+          identifyAnalytics(user.id);
+          track(register ? "account_created" : "account_signed_in");
           setUser(user);
           notify(register ? "Account created. Welcome!" : "Signed in.");
           router.push("/account");
         } catch (error) {
+          track("account_auth_failed", { action: register ? "register" : "login" });
           setError(
             error instanceof Error ? error.message : "Unable to sign in.",
           );

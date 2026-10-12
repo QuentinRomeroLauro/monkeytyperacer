@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   icons: {
     icon: [
-      { url: "/brand/mtr-roadster.svg", type: "image/svg+xml", sizes: "any" },
-      { url: "/brand/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/brand/favicon-roadster.svg?v=2", type: "image/svg+xml", sizes: "any" },
+      { url: "/brand/favicon-32.png?v=2", type: "image/png", sizes: "32x32" },
     ],
-    apple: { url: "/brand/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    apple: { url: "/brand/apple-touch-icon.png?v=2", sizes: "180x180", type: "image/png" },
   },
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,

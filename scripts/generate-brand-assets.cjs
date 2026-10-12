@@ -3,13 +3,15 @@ const fs = require('node:fs');
 const { chromium } = require('@playwright/test');
 (async () => {
   const svg = fs.readFileSync('public/brand/mtr-roadster.svg', 'utf8');
+  const faviconSvg = svg.replace('viewBox="0 0 88 88"', 'viewBox="0 20 88 56"');
+  fs.writeFileSync('public/brand/favicon-roadster.svg', faviconSvg);
   const browser = await chromium.launch({ headless: true });
   try {
     const page = await browser.newPage({ deviceScaleFactor: 1 });
     const pngs = [];
     for (const size of [16, 32, 48, 180, 192, 512]) {
       await page.setViewportSize({ width: size, height: size });
-      await page.setContent(`<style>html,body{margin:0;width:100%;height:100%;background:${size >= 180 ? '#323437' : 'transparent'}}svg{display:block;width:100%;height:100%}</style>${svg}`);
+      await page.setContent(`<style>html,body{margin:0;width:100%;height:100%;background:${size >= 180 ? '#323437' : 'transparent'}}svg{display:block;width:100%;height:100%}</style>${size < 180 ? faviconSvg : svg}`);
       const png = await page.screenshot({ omitBackground: size < 180 });
       const name = size === 180 ? 'apple-touch-icon.png' : size < 180 ? `favicon-${size}.png` : `icon-${size}.png`;
       fs.writeFileSync(`public/brand/${name}`, png);

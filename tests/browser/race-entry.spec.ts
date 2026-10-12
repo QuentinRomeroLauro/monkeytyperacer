@@ -11,15 +11,17 @@ test("homepage quote supports typing and correction without joining; button ente
  await expect(input).toBeFocused();
  await expect(page.getByRole("region",{name:"Quote attribution"})).toHaveCount(0);
  const quote=(await page.locator(".word").allTextContents()).map(w=>w.replaceAll("\u200b","")).join(" ");
- await input.pressSequentially("~");
+ await input.pressSequentially("~~~");
  await expect(page.locator(".race-typing-hint")).toContainText("backspace");
+ await input.press("Backspace");
+ await input.press("Backspace");
  await input.press("Backspace");
  await input.pressSequentially(quote,{delay:1});
  await expect(page.getByRole("region",{name:"Quote results"})).toBeVisible();
  await expect(page.locator("[data-stat=accuracy]")).not.toHaveText("100%");
  const attribution=page.getByRole("region",{name:"Quote attribution"});
- await expect(attribution).toContainText("Gerald's Game");
- await expect(attribution).toContainText("by Stephen King");
+ await expect(attribution).toContainText("Pride and Prejudice");
+ await expect(attribution).toContainText("by Jane Austen");
  const attributionBox=await attribution.boundingBox();
  const resultsBox=await page.getByRole("region",{name:"Quote results"}).boundingBox();
  expect(attributionBox!.y+attributionBox!.height).toBeLessThanOrEqual(resultsBox!.y);
@@ -35,9 +37,9 @@ test("homepage quote supports typing and correction without joining; button ente
  await expect(attribution).toHaveCount(0);
  const nextQuote=(await page.locator(".word").allTextContents()).map(w=>w.replaceAll("\u200b","")).join(" ");
  await input.pressSequentially(nextQuote,{delay:1});
- await expect(attribution).toContainText("See You at the Top");
- await expect(attribution).toContainText("by Zig Ziglar");
- await expect(attribution).not.toContainText("Stephen King");
+ await expect(attribution).toContainText("Emma");
+ await expect(attribution).toContainText("by Jane Austen");
+ await expect(attribution).not.toContainText("Pride and Prejudice");
 });
 
 test("mobile can enter directly without completing the quote",async({page})=>{

@@ -244,11 +244,11 @@ function TestSession({
             })
           : list;
       } else if (config.mode === "quote") {
-        let response = await fetch(`/quotes/${config.language}.json`, {
+        let response = await fetch(config.language === "english" ? "/quotes/books-english.json" : `/quotes/${config.language}.json`, {
           signal: controller.signal,
         });
         if (!response.ok)
-          response = await fetch("/quotes/english.json", {
+          response = await fetch("/quotes/books-english.json", {
             signal: controller.signal,
           });
         if (!response.ok)

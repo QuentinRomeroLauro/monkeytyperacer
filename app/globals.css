@@ -1956,7 +1956,7 @@ button:disabled { cursor:not-allowed; }
 .result-actions .practice-share-action { width:auto; display:inline-flex; align-items:center; gap:8px; padding:10px 14px; font-size:14px; }
 .practice-share-feedback { text-align:center; font-size:12px; color:var(--sub-color); margin:8px 0; }
 
-.race-next-action { margin:24px 0 44px; }
+.race-next-action { margin:24px 0 clamp(160px, 25svh, 300px); }
 .race-replay-controls { display:flex; align-items:center; justify-content:center; gap:16px; min-height:24px; margin-top:24px; color:var(--sub-color); font-size:12px; }
 .race-replay-controls button { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }
 .race-replay-controls input { width:180px; max-width:38vw; accent-color:var(--main-color); }

@@ -1,14 +1,17 @@
 import { siteUrl } from "@/lib/seo";
+import { adsensePublisherId } from "@/lib/adsense";
 import type { Metadata } from "next";
 import "./globals.css";
 import { AppProvider } from "@/components/context";
 import { Analytics } from "@/components/analytics";
 import { Shell } from "@/components/shell";
+const publisherId = adsensePublisherId();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "Monkeytype Racer | Quote races with friends", template: "%s | Monkeytype Racer" },
   description: "Race quotes with real people, invite friends to private races, and practice your typing in a calm, customizable workspace.",
   manifest: "/site.webmanifest",
+  other: publisherId ? { "google-adsense-account": publisherId } : undefined,
   icons: {
     icon: [
       { url: "/brand/favicon-roadster.svg?v=2", type: "image/svg+xml", sizes: "any" },

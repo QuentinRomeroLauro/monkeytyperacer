@@ -5,6 +5,6 @@
   </picture>
 </a>
 
-I made Monkeytype Racer to bring Monkeytype’s quiet, focused typing experience together with the fun of racing friends in TypeRacer. A little indie project, a little friendly competition, and a reason to beat your last run.
+I made Monkeytype Racer to bring Monkeytype’s quiet, focused typing experience together with the fun of racing friends in TypeRacer. A little friendly competition and a reason to beat your last run.
 
 [Try it](https://monkeytyperacer.com) · [GPLv3](LICENSE) · [Credits](THIRD_PARTY_NOTICES.md)
